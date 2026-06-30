@@ -79,7 +79,7 @@
         .site-header.scrolled { box-shadow: var(--shadow-medium); }
         body.dark-mode .site-header.scrolled { box-shadow: 0 4px 12px rgba(255,255,255,0.05); }
         .site-header .container { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.8em; font-weight: bold; color: var(--primary-red); text-decoration: none; }
+        .logo { font-size: 1.8em; font-weight: bold; color: var(--primary-red); text-decoration: none; display: flex; align-items: center; }
         .main-nav ul { list-style: none; display: flex; align-items: center; }
         .main-nav li { margin-left: 25px; }
         .main-nav a { text-decoration: none; color: var(--text-dark); font-weight: 500; }

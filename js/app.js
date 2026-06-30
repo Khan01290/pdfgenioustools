@@ -2918,6 +2918,41 @@
                 this.setupEventListeners();
                 this.generateToolCards();
                 this.initRevealOnScroll();
+                this.handleInitialUrl();
+                this.setupPopstateListener();
+            }
+
+            // Open the correct tool modal if the URL matches a known tool slug
+            // e.g. /split-pdf or /Split-PDF -> opens Split PDF tool
+            handleInitialUrl() {
+                var path = window.location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
+                if (!path) return;
+                // Find matching tool key case-insensitively
+                var matchedKey = Object.keys(this.toolImplementations).find(function(key) {
+                    return key.toLowerCase() === path;
+                });
+                if (matchedKey) {
+                    var tool = this.toolImplementations[matchedKey];
+                    // Wait a tick so DOM/cards are ready
+                    setTimeout(() => this.openModal(matchedKey, tool, true), 50);
+                }
+            }
+
+            setupPopstateListener() {
+                window.addEventListener('popstate', (e) => {
+                    var path = window.location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
+                    if (!path) {
+                        this.closeModal(true);
+                        document.title = 'PDF Genius Tools — Free Online PDF Tools';
+                        return;
+                    }
+                    var matchedKey = Object.keys(this.toolImplementations).find(function(key) {
+                        return key.toLowerCase() === path;
+                    });
+                    if (matchedKey) {
+                        this.openModal(matchedKey, this.toolImplementations[matchedKey], true);
+                    }
+                });
             }
 
             setupTheme() {
@@ -3100,11 +3135,21 @@
                 this.initRevealOnScroll(); 
             }
 
-            openModal(toolKey, tool) {
+            openModal(toolKey, tool, skipUrlUpdate) {
                 this.currentTool = tool;
                 this.currentTool.key = toolKey; 
                 this.resetModal();
                 this.modalTitle.textContent = tool.title;
+
+                // Update URL to reflect the open tool (e.g. /Split-PDF)
+                if (!skipUrlUpdate) {
+                    var urlSlug = toolKey;
+                    var newUrl = '/' + urlSlug;
+                    if (window.location.pathname.toLowerCase() !== newUrl.toLowerCase()) {
+                        window.history.pushState({ toolKey: toolKey }, tool.title, newUrl);
+                        document.title = tool.title + ' — Free Online PDF Tool | PDF Genius Tools';
+                    }
+                }
                 
                 let acceptedTypes = tool.fileType || '*/*';
                 if (tool.fileType === 'text/html') acceptedTypes = '.html,.htm'; 
@@ -3153,11 +3198,17 @@
                 document.body.style.overflow = 'hidden'; 
             }
 
-            closeModal() {
+            closeModal(skipUrlUpdate) {
                 this.modal.style.display = 'none';
                 this.resetModal();
                 this.currentTool = null;
                 document.body.style.overflow = ''; 
+
+                // Reset URL back to home when modal closes
+                if (!skipUrlUpdate && window.location.pathname !== '/') {
+                    window.history.pushState({}, 'PDF Genius Tools', '/');
+                    document.title = 'PDF Genius Tools — Free Online PDF Tools';
+                }
               
                 if(this.fabricCropCanvas) {
         		this.fabricCropCanvas.dispose();
