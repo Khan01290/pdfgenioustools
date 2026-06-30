@@ -392,6 +392,8 @@
             .hamburger-menu.active .bar:nth-child(2) { opacity: 0; }
             .hamburger-menu.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
             .theme-toggle-btn { margin-left: auto; margin-right: 15px; } /* Adjust toggle button position on mobile */
+            .logo { font-size: 1.3em; }
+            .logo svg { width: 26px; height: 26px; }
 
             .hero h1 { font-size: 2.2em; }
             .hero p { font-size: 1em; }
@@ -407,8 +409,9 @@
         @media (max-width: 480px) { /* Small screens */
             .hero h1 { font-size: 1.8em; }
             .tools-grid { grid-template-columns: 1fr; } /* Single column */
-            .footer-grid { grid-template-columns: 1fr; } /* Single column footer */
-            .logo { font-size: 1.5em; }
+            .footer-grid { grid-template-columns: 1fr 1fr; } /* Keep tools and company side by side */
+            .logo { font-size: 1.1em; }
+            .logo svg { width: 22px; height: 22px; }
             .modal-content { flex-direction: column; } /* Stack modal content */
             .ad-placeholder { display: none; }
         }

@@ -702,5 +702,23 @@
       }, 150);
     })();
     </script>
+
+    <button id="back-to-top" aria-label="Back to top" style="
+      position:fixed; bottom:24px; right:24px; width:46px; height:46px; border-radius:50%;
+      background:#e53e3e; color:#fff; border:none; cursor:pointer; font-size:20px;
+      display:none; align-items:center; justify-content:center; box-shadow:0 4px 12px rgba(0,0,0,.25);
+      z-index:200; transition:opacity .2s, transform .2s;">↑</button>
+    <script>
+      (function() {
+        var btn = document.getElementById('back-to-top');
+        if (!btn) return;
+        window.addEventListener('scroll', function() {
+          btn.style.display = window.scrollY > 300 ? 'flex' : 'none';
+        });
+        btn.addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      })();
+    </script>
 </body>
 </html>
