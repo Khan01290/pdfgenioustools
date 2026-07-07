@@ -10,6 +10,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             const app = new PDFGeniusApp();
             app.init();
+            window.pdfApp = app; // Expose globally for search clear button
         });
       
       
@@ -4206,10 +4207,14 @@
             clearSearch() {
                 const resultsDropdown = document.getElementById('search-results-dropdown');
                 const searchStatus = document.getElementById('search-status');
-                const toolsGrid = document.getElementById('tools-grid');
+                const searchInput = document.getElementById('search-input') ||
+                                    document.querySelector('.search-input') ||
+                                    document.querySelector('input[type="text"][placeholder*="earch"]') ||
+                                    document.querySelector('input[placeholder*="PDF"]');
 
                 if (resultsDropdown) resultsDropdown.style.display = 'none';
                 if (searchStatus) searchStatus.style.display = 'none';
+                if (searchInput) { searchInput.value = ''; searchInput.focus(); }
 
                 // Show all tools
                 this.filterToolsGrid('');
