@@ -1,0 +1,49 @@
+# Rewrite all tool URLs to index.html (SPA routing)
+# handleInitialUrl() in app.js reads the path and opens the correct tool
+
+/merge-pdf              /index.html             200
+/split-pdf              /index.html             200
+/compress-pdf           /index.html             200
+/pdf-to-word            /index.html             200
+/word-to-pdf            /index.html             200
+/pdf-to-jpg             /index.html             200
+/jpg-to-pdf             /index.html             200
+/pdf-to-png             /index.html             200
+/png-to-pdf             /index.html             200
+/rotate-pdf             /index.html             200
+/sign-pdf               /index.html             200
+/watermark-pdf          /index.html             200
+/edit-pdf               /index.html             200
+/protect-pdf            /index.html             200
+/unlock-pdf             /index.html             200
+/ocr-pdf                /index.html             200
+/excel-to-pdf           /index.html             200
+/pdf-to-excel           /index.html             200
+/html-to-pdf            /index.html             200
+/pdf-to-powerpoint      /index.html             200
+/powerpoint-to-pdf      /index.html             200
+/organize-pdf           /index.html             200
+/delete-pdf-pages       /index.html             200
+/add-page-numbers       /index.html             200
+/add-header-footer      /index.html             200
+/reorder-pdf            /index.html             200
+/extract-text-pdf       /index.html             200
+/extract-images-pdf     /index.html             200
+/redact-pdf             /index.html             200
+/crop-pdf               /index.html             200
+/repair-pdf             /index.html             200
+/pdf-to-pdfa            /index.html             200
+/pdf-thumbnail-generator /index.html            200
+/pdf-to-json            /index.html             200
+/compare-pdf            /index.html             200
+/remove-pdf-background  /index.html             200
+
+# Legal & info pages - serve their own HTML
+/privacy                /privacy.html           200
+/disclaimer             /disclaimer.html        200
+/terms                  /terms.html             200
+/contact                /contact.html           200
+/about                  /about.html             200
+
+# Catch-all - homepage
+/*                      /index.html             200

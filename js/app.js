@@ -2928,6 +2928,59 @@
             handleInitialUrl() {
                 var path = window.location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
                 if (!path) return;
+
+                            const toolSeoMap = {
+                'split-pdf': { title: 'Split PDF Online Free — Extract Pages from PDF | PDF Genius Tools', desc: 'Split PDF files online free. Extract specific pages or ranges from any PDF. No signup, no file size limits. Works entirely in your browser.' },
+                'word-to-pdf': { title: 'Word to PDF Converter Online Free — Convert DOCX to PDF | PDF Genius Tools', desc: 'Convert Word documents to PDF online free. DOCX to PDF converter — no software needed, no signup. Fast conversion directly in your browser.' },
+                'sign-pdf': { title: 'Sign PDF Online Free — Add Digital Signature to PDF | PDF Genius Tools', desc: 'Sign PDF documents online free. Draw your signature and add it to any PDF. No signup, no upload to servers. Free electronic PDF signing tool.' },
+                'rotate-pdf': { title: 'Rotate PDF Online Free — Rotate PDF Pages | PDF Genius Tools', desc: 'Rotate PDF pages online for free. Fix orientation of any PDF instantly. No signup, no software download needed. 100% browser-based PDF rotation tool.' },
+                'extract-images-pdf': { title: 'Extract Images from PDF Online Free — PDF Image Extractor | PDF Genius Tools', desc: 'Extract all images from PDF documents online free. Download embedded images from any PDF. No signup, no file upload to server required.' },
+                'pdf-to-png': { title: 'PDF to PNG Converter Online Free — Convert PDF to PNG Image | PDF Genius Tools', desc: 'Convert PDF pages to PNG images online free. High-quality PDF to PNG converter — no upload, no signup. Free and instant in your browser.' },
+                'pdf-to-json': { title: 'PDF to JSON Converter Online Free — Extract PDF Data as JSON | PDF Genius Tools', desc: 'Convert PDF content and metadata to JSON format online free. Extract PDF data as structured JSON. No signup, browser-based PDF to JSON tool.' },
+                'reorder-pdf': { title: 'Reorder PDF Pages Online Free — Rearrange PDF Pages | PDF Genius Tools', desc: 'Reorder and rearrange PDF pages online free. Drag and drop interface to reorganize any PDF document. No signup, no upload to servers.' },
+                'add-page-numbers': { title: 'Add Page Numbers to PDF Online Free | PDF Genius Tools', desc: 'Add page numbers to PDF documents online free. Customize position and format of page numbers. No signup required. Works directly in your browser.' },
+                'add-header-footer': { title: 'Add Header and Footer to PDF Online Free | PDF Genius Tools', desc: 'Add custom header and footer to all PDF pages online free. Insert text in header or footer of every page. No signup, browser-based PDF tool.' },
+                'watermark-pdf': { title: 'Watermark PDF Online Free — Add Text Watermark to PDF | PDF Genius Tools', desc: 'Add watermark to PDF online free. Insert custom text watermark on all PDF pages. No signup, 100% browser-based. Protect your PDF documents instantly.' },
+                'delete-pdf-pages': { title: 'Delete PDF Pages Online Free — Remove Pages from PDF | PDF Genius Tools', desc: 'Delete specific pages from PDF online free. Remove unwanted pages from any PDF document. No signup, no file upload to server. Instant removal.' },
+                'redact-pdf': { title: 'Redact PDF Online Free — Remove Sensitive Text from PDF | PDF Genius Tools', desc: 'Redact sensitive information from PDF files online free. Permanently remove confidential text and images. No signup, 100% browser-based PDF redaction.' },
+                'png-to-pdf': { title: 'PNG to PDF Converter Online Free — Convert PNG Images to PDF | PDF Genius Tools', desc: 'Convert PNG images to PDF online free. Combine multiple PNG files into one PDF document. No signup, no watermark. Fast conversion in browser.' },
+                'powerpoint-to-pdf': { title: 'PowerPoint to PDF Converter Online Free — PPTX to PDF | PDF Genius Tools', desc: 'Convert PowerPoint to PDF online free. PPTX to PDF converter — no software download, no signup. Fast conversion directly in your browser.' },
+                'pdf-to-excel': { title: 'PDF to Excel Converter Online Free — Extract PDF Data to Excel | PDF Genius Tools', desc: 'Convert PDF to Excel online free. Extract tables and data from PDF files to Excel format. No upload, no signup. Experimental browser-based tool.' },
+                'pdf-to-pdfa': { title: 'PDF to PDF/A Converter Online Free — PDF/A Archiving | PDF Genius Tools', desc: 'Convert PDF to PDF/A archival format online free. Create long-term archivable PDF/A documents. No signup required. Browser-based PDF/A converter.' },
+                'merge-pdf': { title: 'Merge PDF Files Online Free — Combine PDF Files Instantly | PDF Genius Tools', desc: 'Merge multiple PDF files into one online for free. No upload to server, no signup. Combine PDFs instantly in your browser. Fast, secure and 100% private.' },
+                'unlock-pdf': { title: 'Unlock PDF Online Free — Remove PDF Password | PDF Genius Tools', desc: 'Remove password from PDF online free. Unlock protected PDF files instantly in your browser. No signup required. Free PDF unlock tool.' },
+                'html-to-pdf': { title: 'HTML to PDF Converter Online Free — Convert Web Page to PDF | PDF Genius Tools', desc: 'Convert HTML files or web pages to PDF online free. Paste HTML code and download as PDF. No signup, no upload. Instant HTML to PDF in browser.' },
+                'pdf-to-jpg': { title: 'PDF to JPG Converter Online Free — Convert PDF Pages to Images | PDF Genius Tools', desc: 'Convert PDF pages to JPG images online free. High-quality PDF to JPG converter — no upload, no signup. Download images instantly from your browser.' },
+                'ocr-pdf': { title: 'OCR PDF Online Free — Make Scanned PDF Searchable | PDF Genius Tools', desc: 'Convert scanned PDF to searchable text online free. OCR PDF tool recognizes characters in image-based PDFs. No signup required. Works in browser.' },
+                'extract-text-pdf': { title: 'Extract Text from PDF Online Free — PDF Text Extractor | PDF Genius Tools', desc: 'Extract all text from PDF files online free. Copy text content from any PDF document instantly. No signup, 100% browser-based text extraction.' },
+                'remove-pdf-background': { title: 'Remove PDF Background Online Free — White PDF Background | PDF Genius Tools', desc: 'Remove background from PDF pages online free. Clean up PDF backgrounds instantly in your browser. No signup, no file upload to servers required.' },
+                'protect-pdf': { title: 'Protect PDF with Password Online Free — Encrypt PDF | PDF Genius Tools', desc: 'Add password protection to PDF online free. Encrypt your PDF files to prevent unauthorized access. No upload to servers. 100% browser-based.' },
+                'compress-pdf': { title: 'Compress PDF Online Free — Reduce PDF Size Without Losing Quality | PDF Genius Tools', desc: 'Free online PDF compressor. Reduce PDF file size for email or web. No upload to servers, no signup needed. Instant PDF compression in your browser.' },
+                'pdf-thumbnail-generator': { title: 'PDF Thumbnail Generator Online Free — PDF Preview Images | PDF Genius Tools', desc: 'Generate thumbnail preview images from PDF pages online free. Create PDF thumbnails instantly. No signup, 100% browser-based thumbnail generator.' },
+                'edit-pdf': { title: 'Edit PDF Online Free — Add Text and Shapes to PDF | PDF Genius Tools', desc: 'Edit PDF files online for free. Add text, shapes and drawings to any PDF in your browser. No software download, no signup. Free online PDF editor.' },
+                'jpg-to-pdf': { title: 'JPG to PDF Converter Online Free — Convert Images to PDF | PDF Genius Tools', desc: 'Convert JPG images to PDF online for free. Combine multiple JPG files into one PDF. No signup, no watermark. Fast JPG to PDF conversion in browser.' },
+                'pdf-to-word': { title: 'PDF to Word Converter Online Free — Convert PDF to DOCX | PDF Genius Tools', desc: 'Convert PDF to Word online free. Extract text from PDF files to editable Word documents. No signup required. Fast, free and works in your browser.' },
+                'compare-pdf': { title: 'Compare PDF Files Online Free — Find Differences Between PDFs | PDF Genius Tools', desc: 'Compare two PDF files and highlight differences online free. Find changes between PDF versions. No signup, no upload. Browser-based PDF comparison tool.' },
+                'organize-pdf': { title: 'Organize PDF Pages Online Free — Reorder & Delete PDF Pages | PDF Genius Tools', desc: 'Organize and reorder PDF pages online free. Drag and drop to rearrange or delete pages from any PDF. No signup, 100% browser-based.' },
+                'repair-pdf': { title: 'Repair PDF Online Free — Fix Corrupted PDF Files | PDF Genius Tools', desc: 'Repair and fix corrupted PDF files online free. Attempt to recover damaged PDF documents. No signup, browser-based PDF repair tool.' },
+                'excel-to-pdf': { title: 'Excel to PDF Converter Online Free — Convert XLSX to PDF | PDF Genius Tools', desc: 'Convert Excel spreadsheets to PDF online free. XLSX to PDF converter — no software, no signup. Fast Excel to PDF conversion in your browser.' },
+                'pdf-to-powerpoint': { title: 'PDF to PowerPoint Converter Online Free — PDF to PPTX | PDF Genius Tools', desc: 'Convert PDF to PowerPoint slides online free. Transform PDF pages into PPTX presentation slides. No signup required. Free browser-based tool.' },
+                'crop-pdf': { title: 'Crop PDF Pages Online Free — Resize PDF Page Size | PDF Genius Tools', desc: 'Crop and resize PDF pages online free. Adjust margins and page dimensions of any PDF. No signup, no software needed. Browser-based PDF crop tool.' },
+            };
+
+                // Update page meta tags for SEO when tool URL is visited directly
+                if (toolSeoMap[path]) {
+                    document.title = toolSeoMap[path].title;
+                    var metaDesc = document.querySelector('meta[name="description"]');
+                    if (metaDesc) metaDesc.setAttribute('content', toolSeoMap[path].desc);
+                    var ogTitle = document.querySelector('meta[property="og:title"]');
+                    if (ogTitle) ogTitle.setAttribute('content', toolSeoMap[path].title);
+                    var ogDesc = document.querySelector('meta[property="og:description"]');
+                    if (ogDesc) ogDesc.setAttribute('content', toolSeoMap[path].desc);
+                    var canonical = document.querySelector('link[rel="canonical"]');
+                    if (canonical) canonical.setAttribute('href', 'https://www.pdfgeniustools.online/' + path);
+                }
+
                 // Find matching tool key case-insensitively
                 var matchedKey = Object.keys(this.toolImplementations).find(function(key) {
                     return key.toLowerCase() === path;
