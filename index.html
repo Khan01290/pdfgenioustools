@@ -744,27 +744,15 @@
     <script src="/js/app.js"></script>
 
     <script>
-    // Auto-open tool from URL parameter e.g. /?tool=merge-pdf
+    // URL routing handled by handleInitialUrl() in app.js
+    // Supports clean URLs: /merge-pdf, /compress-pdf etc.
+    // Also supports legacy ?tool= param as fallback
     (function() {
       var params = new URLSearchParams(window.location.search);
       var toolSlug = params.get('tool');
-      if (!toolSlug) return;
-      var tries = 0;
-      var iv = setInterval(function() {
-        var cards = document.querySelectorAll('[data-tool-key]');
-        var found = false;
-        cards.forEach(function(card) {
-          if (card.getAttribute('data-tool-key') === toolSlug) {
-            card.click();
-            found = true;
-          }
-        });
-        if (!found && window.pdfApp && window.pdfApp.tools && window.pdfApp.tools[toolSlug]) {
-          window.pdfApp.openModal(toolSlug, window.pdfApp.tools[toolSlug]);
-          found = true;
-        }
-        if (found || ++tries > 40) clearInterval(iv);
-      }, 150);
+      if (!toolSlug) return; // clean URL handled by app.js handleInitialUrl()
+      // Redirect legacy ?tool= URLs to clean URLs
+      window.history.replaceState({}, '', '/' + toolSlug);
     })();
     </script>
 
