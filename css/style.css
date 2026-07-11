@@ -824,3 +824,24 @@
 }
 
       
+        /* ── Popular/New tool badges ────────────────────────────────────── */
+        .card-badge-wrapper { position:absolute; top:10px; right:10px; }
+        .tool-card { position:relative; }
+        .tool-badge-popular {
+            display:inline-block; background:linear-gradient(135deg,#ff6b35,#e53e3e);
+            color:#fff; font-size:11px; font-weight:700; padding:3px 8px;
+            border-radius:12px; letter-spacing:.3px; white-space:nowrap;
+        }
+        .tool-badge-new {
+            display:inline-block; background:linear-gradient(135deg,#38a169,#276749);
+            color:#fff; font-size:11px; font-weight:700; padding:3px 8px;
+            border-radius:12px; letter-spacing:.3px; white-space:nowrap;
+        }
+
+        /* ── Trust stats bar ────────────────────────────────────────────── */
+        .trust-stats-bar strong { color:var(--primary-red); }
+        body.dark-mode .trust-stats-bar { background:rgba(0,0,0,0.2) !important; }
+
+        /* ── Smooth card hover lift ─────────────────────────────────────── */
+        .tool-card { transition: transform .2s ease, box-shadow .2s ease; }
+        .tool-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(229,62,62,.15); }

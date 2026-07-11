@@ -3099,12 +3099,20 @@
             }
 
             generateToolCards() {
-                this.toolsGrid.innerHTML = ''; 
+                this.toolsGrid.innerHTML = '';
+                const popularTools = ['merge-pdf','compress-pdf','split-pdf','pdf-to-word','jpg-to-pdf','sign-pdf','pdf-to-jpg','rotate-pdf','word-to-pdf','protect-pdf'];
+                const newTools = ['compare-pdf','pdf-to-json','remove-pdf-background','pdf-thumbnail-generator'];
                 Object.entries(this.toolImplementations).forEach(([key, tool]) => {
                     const card = document.createElement('div');
                     card.className = 'tool-card reveal-on-scroll';
                     let descText = tool.desc;
                     let additionalNotes = '';
+                    // Add Popular/New badge
+                    if (popularTools.includes(key)) {
+                        additionalNotes += '<span class="tool-badge-popular">🔥 Popular</span>';
+                    } else if (newTools.includes(key)) {
+                        additionalNotes += '<span class="tool-badge-new">✨ New</span>';
+                    }
 
                     if (tool.isPlaceholder) {
                         additionalNotes += '<p style="color:orange; font-size:0.8em; margin-top: 5px;">(Coming Soon)</p>';
@@ -3118,11 +3126,11 @@
                     }
                     
                     card.innerHTML = `
+                        ${additionalNotes ? `<div class="card-badge-wrapper">${additionalNotes}</div>` : ''}
                         <div class="tool-card-icon">${tool.icon || '⚙️'}</div>
                         <h3>${tool.title}</h3>
-                        <p>${descText}</p> 
+                        <p>${descText}</p>
                         ${tool.isNew ? '<span class="new-badge">New!</span>' : ''}
-                        ${additionalNotes}
                     `;
 
                     if (!tool.isPlaceholder) {
