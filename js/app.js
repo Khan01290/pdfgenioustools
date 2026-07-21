@@ -254,6 +254,39 @@
                     },
                     'pdf-to-powerpoint': {
                         title: 'PDF to PowerPoint', desc: 'Convert PDF pages to PowerPoint slides (images).', icon: '📄➔🇵', fileType: '.pdf', multiple: false,
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>PDF to PowerPoint Converter Online Free</h1>
+                            <p>PDF to PowerPoint is a fast, browser-based tool that converts every page of your PDF document into an individual slide inside a PowerPoint PPTX file. Whether you need to repurpose a business report, a research paper, or a design deck into an editable presentation, this free tool gets the job done in seconds — without requiring Microsoft PowerPoint, Adobe Acrobat, or any software installation.</p>
+                            <br>
+                            <h2>Why Convert PDF to PowerPoint?</h2>
+                            <p>PDF files are excellent for sharing and printing, but they are not designed for editing or presenting. PowerPoint (PPTX) files, on the other hand, are built for live presentations, collaborative editing, and dynamic slideshows. By converting your PDF to PowerPoint, you regain the ability to add animations, edit text, insert new slides, and customize the design for your audience.</p>
+                            <br>
+                            <p>Common use cases include converting academic research PDFs into presentation slides, repurposing PDF brochures into editable marketing decks, turning scanned documents into slideshows, and sharing PDF-based reports in a format that colleagues can annotate and edit in PowerPoint or Google Slides.</p>
+                            <br>
+                            <h2>How PDF to PowerPoint Conversion Works</h2>
+                            <p>Our tool uses PDF.js to render each page of your PDF at high resolution on an HTML canvas. Each rendered page is captured as a high-quality PNG image, which is then embedded as a full-page image inside a PowerPoint slide using PptxGenJS — a powerful JavaScript library for generating PPTX files directly in the browser.</p>
+                            <br>
+                            <p>The result is a PPTX file where each PDF page becomes a full-bleed slide image. The presentation is ready to open in Microsoft PowerPoint, Google Slides, LibreOffice Impress, or any compatible software. Because each slide is image-based, the original layout and formatting of your PDF is preserved perfectly — no content reflow, no missing fonts.</p>
+                            <br>
+                            <h2>Key Features</h2>
+                            <p><strong>100% Free:</strong> No subscription, no trial, no credit card required. Convert as many PDFs as you need at no cost.<br>
+                            <strong>No File Upload:</strong> Your PDF is processed entirely inside your web browser. Files are never sent to any server, ensuring complete privacy.<br>
+                            <strong>High-Quality Output:</strong> Pages are rendered at 1.5x scale for crisp, sharp slide images.<br>
+                            <strong>Multi-Page Support:</strong> Every page in your PDF becomes its own slide automatically.<br>
+                            <strong>Cross-Platform:</strong> Works on Windows, macOS, Linux, iOS, and Android — any device with a modern browser.</p>
+                            <br>
+                            <h2>Tips for Best Results</h2>
+                            <p>For PDFs with text you want to edit in PowerPoint, consider using our PDF to Word tool first to extract the text, then manually build your slides. For presentation-quality visual output where layout matters most, this PDF to PowerPoint tool is the right choice. Very large PDFs (50+ pages) may take a few minutes to process depending on your device speed.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Can I edit the text on the converted slides?</strong><br>Since slides are image-based, text is not directly editable in PowerPoint. To get editable text, extract it first with our PDF Text Extractor tool.</p>
+                            <br>
+                            <p><strong>Is there a page limit?</strong><br>There is no hard page limit, but processing speed depends on your browser and device. Very large PDFs may take longer.</p>
+                            <br>
+                            <p><strong>Does it work with password-protected PDFs?</strong><br>Use our Unlock PDF tool first to remove the password, then convert to PowerPoint.</p>
+                        </section>`,
                         process: async (files) => {
                             this.showLoader('Converting PDF to PowerPoint...');
                             const file = files[0];
@@ -342,6 +375,36 @@
                     },
                     'edit-pdf': {
                         title: 'Edit PDF', desc: 'Add text, shapes, and drawings to your PDF.', icon: '✏️', fileType: '.pdf', multiple: false,
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Edit PDF Online Free</h1>
+                            <p>Edit PDF is a free, browser-based PDF editor that lets you annotate and modify PDF documents by adding text boxes, drawing shapes, and sketching freehand directly on any PDF page. No software download, no subscription, no signup — just open the tool, upload your PDF, and start editing instantly in your web browser.</p>
+                            <br>
+                            <h2>What Can You Do with the PDF Editor?</h2>
+                            <p>Our Edit PDF tool gives you a powerful Fabric.js canvas overlay on top of your PDF pages. You can add custom text in any position on the page, insert rectangles and shapes to highlight or block sections, draw freehand with a pen tool for annotations or signatures, and navigate between pages to edit different sections of multi-page PDFs.</p>
+                            <br>
+                            <p>This is ideal for filling in PDF forms that are not interactive, adding comments or review notes to documents, marking up technical drawings or architectural plans, inserting missing information into scanned PDFs, and highlighting key sections before sharing.</p>
+                            <br>
+                            <h2>How the PDF Editor Works</h2>
+                            <p>When you upload a PDF, our tool uses PDF.js to render each page as a high-resolution canvas. Fabric.js then creates an interactive editing layer on top of the rendered page, allowing you to place and manipulate objects freely. When you click Process, all your edits are flattened onto the PDF pages using PDF-lib, and the resulting file is saved for download.</p>
+                            <br>
+                            <p>Because everything runs in your browser, your documents are completely private — they never leave your device. This makes it suitable even for sensitive business, legal, or personal documents.</p>
+                            <br>
+                            <h2>Key Features</h2>
+                            <p><strong>Add Text:</strong> Click anywhere on the page and type. Reposition text boxes freely.<br>
+                            <strong>Add Shapes:</strong> Insert rectangles to highlight, cover, or frame content areas.<br>
+                            <strong>Freehand Drawing:</strong> Sketch, annotate, or draw signatures with the pen tool.<br>
+                            <strong>Page Navigation:</strong> Work on any page of a multi-page PDF with Previous/Next controls.<br>
+                            <strong>Clear Edits:</strong> Reset changes on any page before saving.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Can I edit the original text inside the PDF?</strong><br>This editor adds new elements on top of the PDF. Changing the original embedded text requires a full desktop PDF editor like Adobe Acrobat.</p>
+                            <br>
+                            <p><strong>Will my edits be saved permanently?</strong><br>Yes. When you click Process, all edits are permanently flattened into the downloaded PDF.</p>
+                            <br>
+                            <p><strong>Is it compatible with all PDFs?</strong><br>It works with most standard PDFs. Encrypted or heavily protected files should be unlocked first using our Unlock PDF tool.</p>
+                        </section>`,
                         onFileSelect: async (files) => {
                             this.editCanvasContainer.style.display = 'block';
                             this.signatureCanvasContainer.style.display = 'none';
@@ -425,6 +488,32 @@
                     },
                     'sign-pdf': {
                         title: 'Sign PDF', desc: 'Draw your signature and add it to a PDF.', icon: '✍️', fileType: '.pdf', multiple: false,
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Sign PDF Online Free</h1>
+                            <p>Sign PDF is a free electronic signature tool that lets you draw your handwritten signature and add it to any PDF document directly in your browser. No Adobe Acrobat, no DocuSign subscription, no software installation required. Just upload your PDF, draw your signature, position it on the page, and download your signed document instantly.</p>
+                            <br>
+                            <h2>Why Use Electronic PDF Signatures?</h2>
+                            <p>Electronic signatures have become the standard for modern business workflows. They eliminate the need to print, sign, scan, and email documents — saving time, paper, and effort. Whether you are signing contracts, agreements, consent forms, approval letters, or internal documents, a digital signature on a PDF is universally accepted in most professional and business contexts.</p>
+                            <br>
+                            <p>Our Sign PDF tool is powered by Fabric.js for smooth, natural signature drawing, and PDF-lib for embedding the signature permanently into the PDF. Everything happens locally in your browser — your document and signature data are never uploaded to any server.</p>
+                            <br>
+                            <h2>How to Sign a PDF</h2>
+                            <p>Upload your PDF file using the file selector or drag and drop. The tool will render your PDF and display a signature drawing canvas. Use your mouse (on desktop) or finger (on touchscreen devices) to draw your signature. Once satisfied, position the signature on the correct page and location. Click Process to embed the signature permanently into the PDF and download the signed document.</p>
+                            <br>
+                            <h2>Key Features</h2>
+                            <p><strong>Draw Signature:</strong> Natural freehand drawing on a smooth canvas.<br>
+                            <strong>Touch Support:</strong> Works on smartphones and tablets with touch input.<br>
+                            <strong>Image Upload:</strong> Upload a PNG image of your existing signature instead of drawing.<br>
+                            <strong>Permanent Embedding:</strong> Signature is flattened into the PDF — not a floating layer.<br>
+                            <strong>Privacy First:</strong> Your document never leaves your device.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Is this legally binding?</strong><br>Electronic signatures are legally recognized in many countries under laws such as the US ESIGN Act and the EU eIDAS regulation. However, legal validity depends on jurisdiction and document type. Consult a legal professional for high-stakes documents.</p>
+                            <br>
+                            <p><strong>Can I sign the same PDF multiple times?</strong><br>Yes. You can re-upload the signed PDF and add additional signatures as needed.</p>
+                        </section>`,
                         onFileSelect: () => {
                             this.signatureCanvasContainer.style.display = 'block';
                             this.editCanvasContainer.style.display = 'none';
@@ -492,6 +581,32 @@
                     },
                     'watermark-pdf': {
                         title: 'Watermark PDF', desc: 'Add a text watermark to all pages of a PDF.', icon: '💧', fileType: '.pdf', multiple: false,
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Watermark PDF Online Free</h1>
+                            <p>Watermark PDF is a free online tool that adds a customizable diagonal text watermark to every page of your PDF document. Mark documents as Confidential, Draft, Sample, For Review, or with your company name — instantly, without any software installation or file upload to a server.</p>
+                            <br>
+                            <h2>Why Add a Watermark to Your PDF?</h2>
+                            <p>Watermarks serve multiple important purposes in professional document management. They indicate the status of a document — such as Draft or Approved — communicate ownership and branding, deter unauthorized copying or redistribution of proprietary content, and provide a clear visual indicator for review copies that should not be treated as final versions.</p>
+                            <br>
+                            <p>Adding a watermark is especially important when sharing proposal documents with clients, distributing sample reports, sending review copies of legal contracts, or protecting intellectual property in PDF-based publications and eBooks.</p>
+                            <br>
+                            <h2>How It Works</h2>
+                            <p>Our tool uses PDF-lib to embed your watermark text directly into the PDF page content stream. You can customize the watermark text, adjust the opacity (from nearly invisible to bold), and set the rotation angle for diagonal or horizontal placement. The watermark is applied consistently across all pages of the document.</p>
+                            <br>
+                            <h2>Key Features</h2>
+                            <p><strong>Custom Text:</strong> Enter any watermark text — company name, status, or copyright notice.<br>
+                            <strong>Adjustable Opacity:</strong> Control how visible the watermark appears on the page.<br>
+                            <strong>Rotation Control:</strong> Set diagonal, horizontal, or custom angle placement.<br>
+                            <strong>All Pages:</strong> Watermark is applied uniformly to every page.<br>
+                            <strong>No Server Upload:</strong> Processing is entirely client-side for full document privacy.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Can the watermark be removed?</strong><br>Watermarks added via this tool are embedded in the page content and are difficult to remove without advanced PDF editing software. For stronger protection, combine with our Protect PDF tool to add password encryption.</p>
+                            <br>
+                            <p><strong>Can I add an image watermark (logo)?</strong><br>Currently, only text watermarks are supported. Image watermarks may be added in a future update.</p>
+                        </section>`,
                         options: (container) => {
                             container.innerHTML = `<label for="watermark-text">Watermark Text:</label>
                                                  <input type="text" id="watermark-text" value="CONFIDENTIAL">
@@ -535,6 +650,32 @@
                     },
                     'rotate-pdf': {
                         title: 'Rotate PDF', desc: 'Rotate all pages of a PDF.', icon: '🔄', fileType: '.pdf', multiple: false,
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Rotate PDF Pages Online Free</h1>
+                            <p>Rotate PDF is a simple, free online tool that corrects the orientation of your PDF pages. If your PDF was scanned upside down, saved sideways, or has mixed page orientations, this tool fixes it in seconds — no software needed, no file upload, completely free.</p>
+                            <br>
+                            <h2>When Do You Need to Rotate a PDF?</h2>
+                            <p>Rotation issues are extremely common with scanned documents. When documents are placed incorrectly in a scanner, or when a mobile phone camera is held sideways while scanning, the resulting PDF pages come out rotated. Similarly, some PDF export tools from spreadsheet applications or design software may produce landscape-oriented pages that display sideways in standard PDF readers.</p>
+                            <br>
+                            <p>Rotating your PDF before sharing ensures recipients can read it comfortably without turning their screen, which is especially important for professional documents, reports, contracts, and invoices.</p>
+                            <br>
+                            <h2>How PDF Rotation Works</h2>
+                            <p>Our tool uses PDF-lib to modify the rotation metadata of each page in the PDF. You can rotate all pages 90 degrees clockwise, 90 degrees counterclockwise (270 degrees), or 180 degrees (fully upside down and back). The rotation is applied to the page orientation flag in the PDF, which means the actual content is not re-rendered — text and image quality remain completely unchanged.</p>
+                            <br>
+                            <h2>Key Features</h2>
+                            <p><strong>Three Rotation Options:</strong> 90°, 180°, or 270° clockwise rotation.<br>
+                            <strong>All Pages at Once:</strong> Rotation is applied to every page uniformly.<br>
+                            <strong>No Quality Loss:</strong> Content is not re-rendered — original resolution is preserved.<br>
+                            <strong>Instant Processing:</strong> Rotation completes in seconds even for large PDFs.<br>
+                            <strong>100% Private:</strong> Your PDF never leaves your browser.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Can I rotate only specific pages?</strong><br>Currently, the tool rotates all pages by the same angle. To rotate individual pages, use our Organize PDF tool which gives you per-page control.</p>
+                            <br>
+                            <p><strong>Will rotating change my file size?</strong><br>No. Rotation is a metadata change only. File size remains essentially unchanged.</p>
+                        </section>`,
                         options: (container) => {
                             container.innerHTML = `<label for="rotate-angle">Rotation Angle:</label>
                                                  <select id="rotate-angle">
@@ -656,6 +797,28 @@
                     },
                     'pdf-to-png': {
                         title: 'PDF to PNG', desc: 'Convert PDF pages to PNG images.', icon: '📄➔🖼️P', fileType: '.pdf', multiple: false,
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>PDF to PNG Converter Online Free</h1>
+                            <p>PDF to PNG is a free online converter that renders each page of your PDF document as a high-quality PNG image file. PNG format offers lossless compression, meaning your converted images retain perfect sharpness — ideal for documents with text, diagrams, charts, and graphics that must look crisp at any zoom level.</p>
+                            <br>
+                            <h2>Why Convert PDF to PNG?</h2>
+                            <p>PNG images are preferred over JPG when quality matters more than file size. Unlike JPG which uses lossy compression that can blur text and create artifacts around sharp edges, PNG preserves every pixel perfectly. This makes PDF to PNG conversion the right choice for technical diagrams, architectural drawings, presentation slides, infographics, and any document where text sharpness is critical.</p>
+                            <br>
+                            <p>Common use cases include inserting PDF content into Word documents or presentations, sharing individual PDF pages on social media or websites, creating thumbnails for document preview systems, and archiving PDF pages as image files for non-PDF environments.</p>
+                            <br>
+                            <h2>How the Conversion Works</h2>
+                            <p>The tool uses PDF.js to render each PDF page on an HTML canvas at high resolution. The canvas is then exported as a PNG image using the browser's native canvas-to-image export functionality. Multi-page PDFs produce multiple PNG files which are packaged into a ZIP archive for easy download.</p>
+                            <br>
+                            <h2>PNG vs JPG — Which Should You Choose?</h2>
+                            <p>Choose PNG when: your document contains text, sharp lines, charts, or logos; you need images for further editing without quality loss; or you plan to use the images on a website with a transparent background. Choose JPG when: your document is primarily photographic; you need smaller file sizes; or the images will be used where slight quality loss is acceptable.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Are all pages converted?</strong><br>Yes. Every page of your PDF is rendered as a separate PNG image and included in the download.</p>
+                            <br>
+                            <p><strong>What resolution are the output images?</strong><br>Pages are rendered at a high resolution scale suitable for most professional use cases.</p>
+                        </section>`,
                          process: async (files, options) => {
                             this.showLoader('Converting PDF to PNG...');
                             const file = files[0];
@@ -697,6 +860,27 @@
                     },
                     'png-to-pdf': {
                         title: 'PNG to PDF', desc: 'Convert PNG images to a PDF file.', icon: '🖼️P➔📄', fileType: '.png', multiple: true,
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>PNG to PDF Converter Online Free</h1>
+                            <p>PNG to PDF is a free online tool that combines one or more PNG image files into a single, professional PDF document. Each PNG image becomes a full page in the PDF. No signup, no watermark, no file upload to any server — everything is processed locally in your browser for complete privacy.</p>
+                            <br>
+                            <h2>Why Convert PNG Images to PDF?</h2>
+                            <p>PNG files are great for individual images but impractical when you need to share multiple pages or create a document. PDF is the universal document format — it preserves layout across all devices, is universally supported, and is the standard format for professional document sharing, printing, and archiving.</p>
+                            <br>
+                            <p>Typical use cases for PNG to PDF conversion include: combining multiple screenshots into a single report, compiling design mockups or UI wireframes into a presentation PDF, packaging diagrams or technical drawings for distribution, turning photo sequences into a portfolio PDF, and submitting image-based documents via email or document portals that require PDF format.</p>
+                            <br>
+                            <h2>How It Works</h2>
+                            <p>Select your PNG files, arrange them in the desired page order, and click Process. Our tool uses PDF-lib to create a new PDF and embed each PNG image as a full-page element. The resulting PDF is generated entirely in your browser with no server communication.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>How many PNG files can I convert at once?</strong><br>There is no strict limit. Select as many PNG files as you need. Each file becomes one page in the output PDF.</p>
+                            <br>
+                            <p><strong>Will image quality be preserved?</strong><br>Yes. PNG images are embedded at their original resolution. No compression or quality loss is applied.</p>
+                            <br>
+                            <p><strong>Can I mix PNG and JPG images?</strong><br>This tool is optimized for PNG files. For JPG images, use our JPG to PDF tool instead.</p>
+                        </section>`,
                         process: async (files) => {
                              this.showLoader('Converting PNGs to PDF...');
                             const pdfDoc = await PDFDocument.create();
@@ -714,6 +898,27 @@
                     },
                     'excel-to-pdf': {
                         title: 'Excel to PDF', desc: 'Convert Excel (XLSX) files to PDF.', icon: '🇽➔📄', fileType: '.xlsx', multiple: false,
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Excel to PDF Converter Online Free</h1>
+                            <p>Excel to PDF is a free, browser-based converter that transforms Microsoft Excel spreadsheet files (XLSX format) into PDF documents. Share financial reports, data tables, budgets, and spreadsheets with anyone — even if they don't have Excel installed — by converting them to the universally compatible PDF format.</p>
+                            <br>
+                            <h2>Why Convert Excel to PDF?</h2>
+                            <p>Excel files are powerful for data analysis, but they are not ideal for sharing. Recipients may have different versions of Excel, or no spreadsheet software at all. Excel files can also be accidentally edited. By converting to PDF, you lock the layout and data in place, ensuring your spreadsheet looks exactly the same on every device and operating system — whether it's opened on a Windows PC, a Mac, an iPhone, or an Android tablet.</p>
+                            <br>
+                            <p>Excel to PDF conversion is commonly used for sharing monthly financial reports with stakeholders, sending invoices and quotes in a professional format, submitting data to clients or government portals that require PDF, archiving spreadsheet data in a non-editable format, and printing spreadsheets with consistent layout.</p>
+                            <br>
+                            <h2>How the Conversion Works</h2>
+                            <p>Our tool uses the SheetJS (xlsx.js) library to read your XLSX file and extract the data and formatting. The spreadsheet is then rendered as an HTML table and converted to PDF using html2pdf.js — all running locally in your browser without any server upload.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Does it support multiple sheets?</strong><br>Currently, the active (first) sheet is converted. Multi-sheet support may be added in future updates.</p>
+                            <br>
+                            <p><strong>Does it preserve formulas?</strong><br>Formulas are evaluated and their current values are shown in the PDF. The PDF is a static snapshot — not a live spreadsheet.</p>
+                            <br>
+                            <p><strong>Is it free?</strong><br>Yes, completely free with no file upload, no signup, and no watermarks on the output.</p>
+                        </section>`,
                         process: async (files) => {
                             this.showLoader('Converting Excel to PDF...');
                             const file = files[0];
@@ -756,6 +961,25 @@
                     },
                     'pdf-to-excel': {
                         title: 'PDF to Excel', desc: 'Extract data from PDF to Excel (experimental).', icon: '📄➔🇽', fileType: '.pdf', multiple: false,
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>PDF to Excel Converter Online Free</h1>
+                            <p>PDF to Excel is a free, experimental browser-based tool that extracts text and tabular data from PDF documents and exports the content in a spreadsheet-compatible format. Recover data from PDF invoices, financial statements, price lists, and reports so you can work with it in Microsoft Excel or Google Sheets — without manual retyping.</p>
+                            <br>
+                            <h2>When to Use PDF to Excel</h2>
+                            <p>This tool is most effective when your PDF contains clearly structured text data — such as financial tables, price lists, product catalogs, or data exports from accounting software. PDFs that were originally generated from digital sources (not scanned) tend to produce the best extraction results.</p>
+                            <br>
+                            <p>Common use cases include extracting invoice line items for accounting, pulling data from PDF reports into Excel for analysis, recovering financial data from PDF bank statements, and converting PDF price lists into editable spreadsheets for comparison.</p>
+                            <br>
+                            <h2>Important Note on Accuracy</h2>
+                            <p>PDF was designed as a presentation format, not a data format. Table structures in PDFs are not always machine-readable. Our browser-based extractor works well for simple, well-structured PDFs but may require manual cleanup for complex multi-column layouts. For scanned PDFs, use our OCR PDF tool first to add a readable text layer, then re-attempt the extraction.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Why is it labeled experimental?</strong><br>Browser-based PDF table detection is inherently complex. Results vary by PDF structure. We recommend reviewing the output in Excel before using it for important work.</p>
+                            <br>
+                            <p><strong>Can it handle scanned PDFs?</strong><br>No. Use our OCR PDF tool first to convert scanned image pages to searchable text, then try the extraction again.</p>
+                        </section>`,
                         process: async (files) => {
                             this.showLoader('Extracting data to Excel (experimental)...');
                             const file = files[0];
@@ -778,6 +1002,25 @@
                     },
                     'html-to-pdf': {
                         title: 'HTML to PDF', desc: 'Convert HTML file or raw HTML to PDF.', icon: '🌐➔📄', fileType: '.html,.htm,text/html', multiple: false,
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>HTML to PDF Converter Online Free</h1>
+                            <p>HTML to PDF is a free browser-based tool that converts HTML code or web page markup into a downloadable PDF document. Paste your HTML, click Process, and download the rendered PDF — no server, no signup, no software installation needed.</p>
+                            <br>
+                            <h2>Why Convert HTML to PDF?</h2>
+                            <p>HTML to PDF conversion is one of the most common tasks in web development and document automation. Developers use it to generate PDF invoices, reports, certificates, and confirmations from HTML templates. Content creators use it to save web articles or blog posts as PDFs for offline reading. Businesses use it to archive web-based records in a stable, non-editable format.</p>
+                            <br>
+                            <p>Unlike printing from a browser (which can produce inconsistent results), a proper HTML to PDF converter gives you programmatic control over the output. Our tool uses html2pdf.js, a powerful library that renders HTML with CSS styling and produces a well-formatted PDF document.</p>
+                            <br>
+                            <h2>What HTML Content Works Best?</h2>
+                            <p>This tool works best with self-contained HTML — that is, HTML that includes inline CSS styles or embedded stylesheets. External stylesheet links (like CDN-hosted CSS files) may not load in the conversion environment. For best results, inline your CSS using the style attribute or a style tag, use standard HTML elements (headings, paragraphs, tables, lists), and avoid JavaScript-dependent dynamic content.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Can I convert a live website URL?</strong><br>Currently, paste the HTML source code of the page. To get the HTML of a webpage, right-click and select View Page Source in your browser, then copy and paste it here.</p>
+                            <br>
+                            <p><strong>Are external images loaded?</strong><br>Images referenced by absolute URLs (https://) may load if your browser allows it. Images referenced by relative paths will not load in the conversion context.</p>
+                        </section>`,
                         options: (container) => {
                             container.innerHTML = `<label for="html-input-type">Input Type:</label>
                                                  <select id="html-input-type">
@@ -838,6 +1081,28 @@
                     },
                     'protect-pdf': {
                         title: 'Protect PDF', desc: 'Add a password to encrypt your PDF.', icon: '🔒', fileType: '.pdf', multiple: false,
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Protect PDF with Password Online Free</h1>
+                            <p>Protect PDF adds password encryption to your PDF documents, preventing unauthorized access. Set a strong password and only people who know it can open and view the file. No software installation, no file upload to any server — your document and password stay completely on your device.</p>
+                            <br>
+                            <h2>Why Password Protect a PDF?</h2>
+                            <p>Sensitive documents should never be shared without protection. Legal contracts, financial reports, medical records, personal identification documents, confidential business proposals, and private correspondence all benefit from password protection before being emailed or shared online.</p>
+                            <br>
+                            <p>Password-protected PDFs add a critical layer of security — even if the file is forwarded to unintended recipients or intercepted during transmission, it cannot be opened without the password. This is especially important when sharing documents over email, messaging apps, or cloud storage services.</p>
+                            <br>
+                            <h2>How PDF Password Protection Works</h2>
+                            <p>Our tool uses PDF-lib to apply AES encryption to your PDF file. The password you set is required every time the file is opened. The encryption and password application happen entirely within your browser — no data is transmitted to any external server at any point.</p>
+                            <br>
+                            <h2>Important: Remember Your Password</h2>
+                            <p>There is no password recovery option. If you forget the password, the PDF cannot be reopened. Always store your password in a secure password manager or a safe location before sharing the protected PDF.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>What encryption standard is used?</strong><br>Standard PDF password encryption using AES (Advanced Encryption Standard) is applied, which is the industry standard for PDF security.</p>
+                            <br>
+                            <p><strong>Can I remove the password later?</strong><br>Yes. Use our Unlock PDF tool — you will need to enter the current password to remove protection.</p>
+                        </section>`,
                         options: (container) => {
                             container.innerHTML = `<label for="pdf-password">Password:</label>
                                                  <input type="password" id="pdf-password">
@@ -873,6 +1138,25 @@
                     },
                     'unlock-pdf': {
                         title: 'Unlock PDF', desc: 'Remove password from a PDF (if known).', icon: '🔓', fileType: '.pdf', multiple: false,
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Unlock PDF Online Free</h1>
+                            <p>Unlock PDF removes the password protection from a PDF document you are authorized to access. Enter the correct password, and the tool generates a new, unlocked version of the PDF that can be opened freely — no password required every time. All processing happens locally in your browser with complete privacy.</p>
+                            <br>
+                            <h2>When Do You Need to Unlock a PDF?</h2>
+                            <p>Password-protected PDFs are convenient for security but can become frustrating when you need to share them with multiple colleagues, process them through automated systems that do not support password entry, edit them in PDF software, merge them with other documents using tools like our Merge PDF tool, or print them without entering a password each time.</p>
+                            <br>
+                            <p>Unlocking a PDF you own or have authorization to access is completely legitimate. This tool is designed for situations where you know the password and simply want to remove the access restriction for practical workflow reasons.</p>
+                            <br>
+                            <h2>How It Works</h2>
+                            <p>Upload the password-protected PDF, enter the correct password, and click Process. PDF-lib reads the file using the provided password, decrypts it, and saves a new copy without password restrictions. The unlocked PDF is available for download immediately.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Can I unlock a PDF without knowing the password?</strong><br>No. You must know the current password. This tool does not attempt to crack or bypass encryption — it removes protection only when the correct password is provided.</p>
+                            <br>
+                            <p><strong>Is it legal to unlock a PDF?</strong><br>It is legal to unlock PDF files that you own or have authorization to modify. Unlocking files without authorization may violate copyright or access laws.</p>
+                        </section>`,
                         options: (container) => {
                             container.innerHTML = `<label for="pdf-unlock-password">Password (if any):</label>
                                                  <input type="password" id="pdf-unlock-password" placeholder="Leave blank if no password">`;
@@ -889,6 +1173,25 @@
                     },
                     'organize-pdf': { 
                         title: 'Organize PDF', desc: 'Reorder or delete pages from a PDF.', icon: '📑', fileType: '.pdf', multiple: false,
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Organize PDF Pages Online Free</h1>
+                            <p>Organize PDF gives you a visual drag-and-drop interface to rearrange, reorder, and delete pages in your PDF document. View thumbnail previews of all pages, drag them into the correct order, remove unwanted pages, and save a clean, reorganized PDF — all inside your browser, with no file upload required.</p>
+                            <br>
+                            <h2>Why Organize Your PDF Pages?</h2>
+                            <p>PDF page order problems are common. Scanned documents often have pages out of sequence. Merged PDFs may need reordering after combining. Reports may need chapters rearranged. Legal documents may require specific page ordering for submission. Blank or filler pages from scanning need to be removed before sharing.</p>
+                            <br>
+                            <p>With our Organize PDF tool, you have complete visual control over your document structure without any software installation. The thumbnail interface makes it easy to spot which pages need moving or deleting at a glance.</p>
+                            <br>
+                            <h2>How It Works</h2>
+                            <p>Upload your PDF and the tool renders thumbnail images of every page using PDF.js. Drag thumbnails to reposition pages in any order. Click the delete button on any thumbnail to remove that page. When your layout is correct, click Process and PDF-lib rebuilds the PDF in your specified order. Download the reorganized PDF instantly.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Can I combine pages from multiple PDFs?</strong><br>Use our Merge PDF tool first to combine your PDFs, then use Organize PDF to rearrange the merged result.</p>
+                            <br>
+                            <p><strong>Is there a page limit?</strong><br>No strict limit, but very large PDFs (100+ pages) may use significant browser memory and take longer to display thumbnails.</p>
+                        </section>`,
                         onFileSelect: async (files) => this.setupPageOrganizationUI(files[0]),
                         options: (container) => {
                             container.innerHTML = `<p>Drag and drop page thumbnails to reorder. Click 'X' to mark for deletion.</p>
@@ -925,6 +1228,28 @@
                     },
                     'ocr-pdf': {
                         title: 'OCR PDF', desc: 'Recognize text in scanned PDFs (adds text layer).', icon: '🔍', fileType: '.pdf', multiple: false, isNew: false,
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>OCR PDF Online Free</h1>
+                            <p>OCR PDF (Optical Character Recognition) analyzes the scanned images inside your PDF and adds a searchable, selectable text layer on top of each page. After processing, you can search, highlight, and copy text from what was previously an unreadable image-based PDF — all without installing any software or uploading your files to a server.</p>
+                            <br>
+                            <h2>What is OCR and Why Does It Matter?</h2>
+                            <p>When documents are scanned with a scanner or photographed with a camera, they are saved as images inside the PDF — not as readable text. This means you cannot search for words, select text to copy, or have the document read aloud by screen readers. OCR (Optical Character Recognition) uses AI-powered analysis to identify letters and words in images and convert them into actual machine-readable text.</p>
+                            <br>
+                            <p>Making PDFs searchable is essential for legal document management, academic research, archiving scanned historical records, processing scanned invoices and receipts, and enabling accessibility features for visually impaired users who rely on screen readers.</p>
+                            <br>
+                            <h2>How Our OCR PDF Tool Works</h2>
+                            <p>Our tool uses Tesseract.js — a powerful open-source OCR engine ported to JavaScript — running entirely in your browser. Each page of your PDF is rendered as an image using PDF.js, then passed through Tesseract's recognition engine. The recognized text is embedded as an invisible text layer in the PDF using PDF-lib, preserving the original visual appearance while adding full text searchability.</p>
+                            <br>
+                            <h2>Tips for Best OCR Results</h2>
+                            <p>OCR accuracy depends heavily on scan quality. For best results, use high-resolution scans (300 DPI or higher), ensure the document is straight and not skewed, use good lighting with no shadows when photographing documents, and avoid heavily handwritten text (OCR works best on printed text).</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>How long does OCR take?</strong><br>OCR is computationally intensive. Expect 10-30 seconds per page depending on your device speed. Multi-page documents will take longer.</p>
+                            <br>
+                            <p><strong>What languages are supported?</strong><br>English is fully supported. Additional languages available through Tesseract.js include French, German, Spanish, and more.</p>
+                        </section>`,
                         options: (container) => {
                             container.innerHTML = `<label for="ocr-language">Language:</label>
                                                    <select id="ocr-language">
@@ -1010,6 +1335,25 @@
                     },
                     'add-page-numbers': {
                         title: 'Add Page Numbers', desc: 'Insert page numbers into your PDF.', icon: '#️⃣', fileType: '.pdf', multiple: false,
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Add Page Numbers to PDF Online Free</h1>
+                            <p>Add Page Numbers is a free online tool that automatically inserts page numbers onto every page of your PDF document. Customize the position (top or bottom, left, center, or right) and set a custom starting number. All processing runs in your browser — no file upload, no signup, no software needed.</p>
+                            <br>
+                            <h2>Why Add Page Numbers to PDFs?</h2>
+                            <p>Page numbers are a fundamental requirement for professional documents. They make navigation easier, allow readers to reference specific sections in meetings or reviews, are required by many academic and legal submission guidelines, ensure printed copies can be reassembled if pages get shuffled, and make your document look polished and complete.</p>
+                            <br>
+                            <p>Reports, theses, legal briefs, manuals, proposals, and any multi-page document destined for printing or professional submission should have page numbers. This tool adds them in seconds, directly to the PDF, without disturbing any existing content.</p>
+                            <br>
+                            <h2>How It Works</h2>
+                            <p>Using PDF-lib, the tool overlays a page number label on each page of your PDF. You control the horizontal and vertical position, and the starting number. The numbers are added as a text overlay that does not affect the existing content — they simply appear at the specified position on each page.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Can I skip numbering the first page (cover page)?</strong><br>Currently all pages are numbered. For advanced control, consider using our Edit PDF tool to manually add a number to specific pages.</p>
+                            <br>
+                            <p><strong>Can I choose the font style?</strong><br>The tool uses a clean standard font. Advanced font customization may be added in a future update.</p>
+                        </section>`,
                         options: (container) => {
                             container.innerHTML = `<label for="pn-position">Position:</label>
                                                  <select id="pn-position">
@@ -1067,6 +1411,25 @@
                     },
                     'add-header-footer': {
                         title: 'Add Header/Footer', desc: 'Add text to header or footer of PDF pages.', icon: 'HF', fileType: '.pdf', multiple: false,
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Add Header and Footer to PDF Online Free</h1>
+                            <p>Add Header and Footer is a free online tool that inserts your custom text at the top (header) and/or bottom (footer) of every page in your PDF document. Add document titles, dates, company names, version numbers, or any repeating information to all pages instantly — no software, no signup, no file upload required.</p>
+                            <br>
+                            <h2>Why Add Headers and Footers to PDFs?</h2>
+                            <p>Headers and footers serve multiple professional purposes. They reinforce branding by displaying your company name or logo text on every page. They provide context by showing the document title and date on every page. They aid navigation by including section titles or document version information. They meet submission requirements for academic papers, legal filings, and corporate documents that mandate header or footer information.</p>
+                            <br>
+                            <p>Adding consistent headers and footers transforms a plain PDF into a professional, branded document that clearly identifies its origin and purpose on every single page.</p>
+                            <br>
+                            <h2>How It Works</h2>
+                            <p>PDF-lib is used to add text overlays at the top and bottom margins of each PDF page. Enter your desired header text, footer text, or both, and click Process. The text is rendered at the specified position on every page of the document, using a clean standard font that complements most document styles.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Can I add both a header and footer at the same time?</strong><br>Yes. You can enter text for the header, footer, or both in the same operation.</p>
+                            <br>
+                            <p><strong>Will the header or footer overlap existing content?</strong><br>The text is placed in the margin area. If your PDF has content that extends to the very edge of the page, there may be some overlap — consider using our Crop PDF tool to create margin space first.</p>
+                        </section>`,
                         options: (container) => {
                             container.innerHTML = `<label for="hf-header-text">Header Text (leave blank if none):</label>
                                                  <input type="text" id="hf-header-text" placeholder="e.g., Document Title">
@@ -1119,6 +1482,25 @@
                     },
                     'delete-pdf-pages': {
                         title: 'Delete PDF Pages', desc: 'Remove specific pages from a PDF.', icon: '🗑️📄', fileType: '.pdf', multiple: false,
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Delete PDF Pages Online Free</h1>
+                            <p>Delete PDF Pages is a free online tool that removes specific pages from your PDF document. Enter the page numbers you want to delete, click Process, and download a new PDF with those pages permanently removed — no software installation, no file upload to any server, completely free.</p>
+                            <br>
+                            <h2>When Do You Need to Delete PDF Pages?</h2>
+                            <p>There are many reasons you might need to remove pages from a PDF. Scanned documents often include blank separator pages from the scanner that need to be cleaned up. Merged PDFs may have duplicate or redundant pages. Reports may contain internal cover pages or appendices that are not appropriate to share with external recipients. Legal documents may have pages that contain confidential information not relevant to the current recipient.</p>
+                            <br>
+                            <p>Rather than recreating the entire document or using expensive desktop software, our free Delete PDF Pages tool lets you surgically remove exactly the pages you need to remove in seconds.</p>
+                            <br>
+                            <h2>How to Delete PDF Pages</h2>
+                            <p>Upload your PDF, enter the page numbers you want to remove separated by commas (e.g., 1, 3, 5-7), and click Process. PDF-lib rebuilds the document with those pages excluded and prepares it for download. The original page content of all remaining pages is preserved exactly.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Can I specify a range of pages to delete?</strong><br>Yes. Enter ranges like 5-10 to delete pages 5 through 10, or combine individual pages and ranges like 1, 3, 7-9.</p>
+                            <br>
+                            <p><strong>Can I preview pages before deleting?</strong><br>Use our Organize PDF tool for a visual thumbnail interface where you can see and select pages before removing them.</p>
+                        </section>`,
                         options: (container) => {
                              container.innerHTML = `<label for="delete-page-ranges">Pages/ranges to delete (e.g., 1-3, 5, 7-9):</label>
                                                  <input type="text" id="delete-page-ranges" placeholder="e.g., 1-3, 5, 7-9">
@@ -1166,6 +1548,27 @@
                     },
                     'powerpoint-to-pdf': {
                         title: 'PowerPoint to PDF',
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>PowerPoint to PDF Converter Online Free</h1>
+                            <p>PowerPoint to PDF is a free browser-based converter that transforms Microsoft PowerPoint PPTX presentation files into PDF documents. Share your slides with anyone — even if they don't have PowerPoint installed — by converting them to the universally compatible PDF format. No software installation, no signup, no file upload to any server.</p>
+                            <br>
+                            <h2>Why Convert PowerPoint to PDF?</h2>
+                            <p>PowerPoint files are the standard for creating presentations, but they are not ideal for sharing. Recipients may have different versions of PowerPoint, no Office license, or may be on a device that doesn't support PPTX files. By converting to PDF, you ensure your presentation looks exactly the same on every device — Windows, Mac, iPhone, Android, or any modern web browser.</p>
+                            <br>
+                            <p>PDF presentations are also smaller in file size, easier to email, and cannot be accidentally edited by recipients. They are ideal for handout versions of presentations, client deliverables, educational materials, and archiving presentation content.</p>
+                            <br>
+                            <h2>How the Conversion Works</h2>
+                            <p>Our tool uses the mammoth.js and PptxGenJS libraries to extract slide content from your PPTX file and render it into a PDF format. Each slide is processed and output as a page in the resulting PDF. The conversion runs entirely in your browser — your presentation file never leaves your device.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Are animations preserved in the PDF?</strong><br>No. PDF is a static format — animations and transitions are not included in the output. Each slide is captured as a static snapshot.</p>
+                            <br>
+                            <p><strong>Do I need PowerPoint installed?</strong><br>No. The conversion happens entirely in your browser using JavaScript libraries — no Microsoft Office or PowerPoint software needed.</p>
+                            <br>
+                            <p><strong>Is it free?</strong><br>Yes, completely free with no watermarks, no page limits, and no signup required.</p>
+                        </section>`,
                         desc: 'Convert PPTX to PDF (extracts text, images, basic formatting). .ppt not supported.',
                         icon: '🇵➔📄',
                         fileType: '.pptx',
@@ -1440,6 +1843,28 @@
     },
                     'repair-pdf': {
                       title: 'Repair PDF',
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Repair PDF Online Free</h1>
+                            <p>Repair PDF is a free online tool that attempts to fix corrupted or damaged PDF files by reloading and re-saving the document structure. If your PDF fails to open, displays errors, or shows corrupted content, this tool may be able to recover and restore it — entirely in your browser with no file upload required.</p>
+                            <br>
+                            <h2>What Causes PDF Corruption?</h2>
+                            <p>PDF files can become corrupted for a variety of reasons. Incomplete downloads are among the most common causes — if your internet connection dropped while downloading a PDF, the file may be incomplete or have a broken structure. Software crashes during PDF creation or export can also produce invalid file structures. Storage media errors, file system issues, and failed email attachments can all result in PDFs that cannot be opened normally.</p>
+                            <br>
+                            <p>In some cases, PDFs appear corrupted because they were created by buggy software that produced a technically invalid but partially readable file. Our repair tool attempts to parse and recover what it can from such files.</p>
+                            <br>
+                            <h2>How the Repair Tool Works</h2>
+                            <p>The tool uses PDF-lib to parse the internal structure of your PDF, recover readable content, and re-save it as a new, clean PDF file. This process can fix broken cross-reference tables, incomplete file trailers, and minor structural errors that prevent PDF readers from opening the file.</p>
+                            <br>
+                            <h2>What to Do if Repair Doesn't Work</h2>
+                            <p>If the PDF is severely damaged, browser-based repair may not be sufficient. In that case, try opening the PDF in a different PDF reader (such as Google Chrome, Firefox, or Adobe Acrobat), which may have more lenient parsing. If the file was downloaded, try downloading it again from the original source.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Will all corrupted PDFs be fixed?</strong><br>Not necessarily. Severely damaged files may be unrecoverable. This tool works best on mildly corrupted PDFs with structural issues.</p>
+                            <br>
+                            <p><strong>Is my file safe to upload?</strong><br>Your file is never uploaded — all repair processing happens locally in your browser.</p>
+                        </section>`,
                       desc: 'Attempt to recover data from a corrupt PDF by rebuilding its structure.',
                       icon: '🛠️',
                       fileType: '.pdf',
@@ -1495,6 +1920,25 @@
                   },
                     'pdf-to-pdfa': {
                       title: 'PDF to PDF/A',
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>PDF to PDF/A Converter Online Free</h1>
+                            <p>PDF to PDF/A converts your PDF documents to the PDF/A archival format — an ISO-standardized version of PDF specifically designed for long-term digital preservation. PDF/A files are self-contained, ensuring they can be opened and rendered exactly as intended years or decades into the future, regardless of software changes or font availability.</p>
+                            <br>
+                            <h2>What is PDF/A and Why Does It Matter?</h2>
+                            <p>PDF/A (PDF for Archiving) is a strict subset of the PDF specification designed to guarantee long-term reproducibility. While standard PDF files may reference external fonts, color profiles, or resources that could become unavailable over time, PDF/A requires that all such resources be embedded directly in the file. This makes the document completely self-sufficient — it will look identical whether opened today or in 50 years.</p>
+                            <br>
+                            <p>PDF/A is widely required by government agencies, courts, law firms, libraries, healthcare institutions, and archival organizations. It is the mandated format for many official document submissions, legal filings, long-term records management systems, and digital preservation projects.</p>
+                            <br>
+                            <h2>PDF/A vs Standard PDF</h2>
+                            <p>Standard PDFs can reference external resources, use transparency, include audio/video, use encryption, and contain JavaScript. PDF/A prohibits all of these features to ensure future compatibility. If your PDF contains any of these elements, the conversion will remove or substitute them to produce a compliant PDF/A file.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Which PDF/A variant does this tool produce?</strong><br>The tool produces a PDF/A-compatible file. For strict compliance certification, consult a dedicated PDF/A validation tool after conversion.</p>
+                            <br>
+                            <p><strong>Who typically requires PDF/A?</strong><br>Courts, government agencies, archival institutions, hospitals, and any organization with long-term records retention requirements commonly mandate PDF/A.</p>
+                        </section>`,
                       desc: 'Convert PDF to PDF/A-compliant format.',
                       icon: '📄➔🇦',
                       fileType: '.pdf',
@@ -1633,6 +2077,25 @@
                   },
     				'redact-pdf': {
                       title: 'Redact PDF',
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Redact PDF Online Free</h1>
+                            <p>Redact PDF is a free online tool that lets you permanently remove sensitive information from PDF documents by drawing black redaction boxes over confidential text, personal data, or proprietary content. The redacted areas are replaced with solid black rectangles, making the underlying information completely unreadable. All processing runs locally in your browser — your document never leaves your device.</p>
+                            <br>
+                            <h2>Why PDF Redaction Matters</h2>
+                            <p>Redaction is a critical step whenever sharing documents that contain sensitive, confidential, or private information. Simply covering text with a black box in a word processor is not true redaction — the original text may still be accessible in the underlying document. True PDF redaction permanently removes the content from the document so it cannot be recovered by selecting text, using Find, or inspecting the file structure.</p>
+                            <br>
+                            <p>Common redaction use cases include removing personal identification information (PII) from shared documents, blacking out confidential financial figures in reports shared externally, removing witness names or sensitive details from legal documents for public disclosure, protecting patient information in medical records before sharing, and removing proprietary business information before submitting documents to regulatory agencies.</p>
+                            <br>
+                            <h2>How to Redact a PDF</h2>
+                            <p>Upload your PDF, navigate to the page containing sensitive content, and use the redaction drawing tool to draw rectangles over the areas you want to permanently remove. You can redact content on multiple pages before clicking Process. Once processed, the redacted areas are replaced with solid black in the output PDF.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Is the redaction permanent?</strong><br>Yes. The tool applies solid black overlays to the selected areas in the final PDF. Verify your redactions by reviewing the output PDF thoroughly before sharing.</p>
+                            <br>
+                            <p><strong>Can redacted content be recovered?</strong><br>With this browser-based tool, recovery of redacted content is extremely difficult. For the highest-security redaction requirements, verify the output with a professional PDF tool.</p>
+                        </section>`,
                       desc: 'Permanently remove sensitive text and graphics from PDF.',
                       icon: '⬛',
                       fileType: '.pdf',
@@ -1801,6 +2264,25 @@
                   },              
                    	'crop-pdf': {
                     title: 'Crop PDF',
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Crop PDF Pages Online Free</h1>
+                            <p>Crop PDF is a free online tool that trims and adjusts the visible page area of your PDF document. Remove unwanted white margins, cut unnecessary borders, focus on a specific region, or resize page dimensions to fit a different paper size — all in your browser without any software installation or file upload.</p>
+                            <br>
+                            <h2>When Do You Need to Crop a PDF?</h2>
+                            <p>PDF cropping is needed in many practical situations. Scanned documents often have large white margins from the scanning bed that waste space and look unprofessional. Presentation PDFs exported at the wrong page size may have excessive padding. Technical drawings may need to be cropped to focus on a specific detail. Documents formatted for A4 paper may need cropping before printing on Letter size, or vice versa.</p>
+                            <br>
+                            <p>Cropping also allows you to effectively zoom in on content when converting PDF pages to images — a cropped PDF will produce tighter, more focused image exports using our PDF to JPG or PDF to PNG tools.</p>
+                            <br>
+                            <h2>How PDF Cropping Works</h2>
+                            <p>PDF cropping uses the CropBox property defined in the PDF specification. Our tool uses PDF-lib to modify the crop box dimensions — specifying how much to trim from each edge (top, bottom, left, right) in PDF points (72 points = 1 inch). The underlying page content is not deleted — only the visible viewing area is changed. This means cropping is non-destructive.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>What units are used for crop values?</strong><br>Values are entered in PDF points. There are 72 points per inch. So to trim 0.5 inches from each side, enter 36 points.</p>
+                            <br>
+                            <p><strong>Is cropping reversible?</strong><br>Because PDF cropping changes the CropBox (not the MediaBox), the original content is technically still there. However, for most practical purposes, treat it as permanent.</p>
+                        </section>`,
                     desc: 'Set a new visible area for all pages in your PDF.',
                     icon: '◩',
                     fileType: '.pdf',
@@ -1958,6 +2440,25 @@
                 },
                   	'reorder-pdf': {
                     title: 'PDF Page Reorder',
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Reorder PDF Pages Online Free</h1>
+                            <p>Reorder PDF Pages is a free online tool that provides a visual drag-and-drop interface for rearranging the pages of your PDF into any order you need. View thumbnail previews of every page, drag them into position, and save the reordered PDF — all inside your browser with no file upload and no software installation.</p>
+                            <br>
+                            <h2>Why Reorder PDF Pages?</h2>
+                            <p>Page ordering problems are very common in PDF documents. Scanned multi-page documents often come out in the wrong order if pages are placed in the scanner incorrectly. PDFs assembled from multiple sources may need restructuring. Educational materials might need chapters rearranged. Legal bundles require specific page ordering for court submission. Financial reports need sections organized in a specific sequence for review.</p>
+                            <br>
+                            <p>Being able to visually rearrange pages — rather than specifying page numbers blindly — makes it much easier to get the order exactly right, especially for long documents.</p>
+                            <br>
+                            <h2>How It Works</h2>
+                            <p>After uploading your PDF, the tool renders thumbnail images of every page using PDF.js. You can drag and drop the thumbnails to rearrange pages in any sequence. When you are satisfied with the order, click Process and PDF-lib rebuilds the PDF in your specified page sequence. Download the reordered document instantly.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Can I also delete pages while reordering?</strong><br>Use our Organize PDF tool, which combines drag-to-reorder with page deletion in a single interface.</p>
+                            <br>
+                            <p><strong>Is there a page limit?</strong><br>No strict limit. Very large PDFs (100+ pages) may take a moment to generate all thumbnails.</p>
+                        </section>`,
                     desc: 'Visually rearrange PDF pages by dragging and dropping thumbnails.',
                     icon: '🔀',
                     fileType: '.pdf',
@@ -2035,6 +2536,28 @@
                 },                  	
                   	'extract-text-pdf': {
                     title: 'PDF Text Extractor',
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Extract Text from PDF Online Free</h1>
+                            <p>PDF Text Extractor is a free online tool that pulls all the readable text content out of your PDF document and presents it as plain text you can copy, edit, save, or use in any application. No software installation, no file upload to any server, no signup — just upload your PDF and get the text instantly.</p>
+                            <br>
+                            <h2>Why Extract Text from a PDF?</h2>
+                            <p>PDFs are designed for consistent visual presentation, not for text reuse. When you need to work with the content inside a PDF — editing it, translating it, analyzing it, or pasting it into another application — extracting the text first saves enormous amounts of manual retyping time.</p>
+                            <br>
+                            <p>Common use cases include extracting article text from PDF journals for research and citation, pulling data from PDF reports for further analysis, recovering text from old PDFs to update or reformat, extracting content for translation workflows, feeding PDF content into AI tools or text analysis systems, and indexing or archiving document content.</p>
+                            <br>
+                            <h2>How the Text Extraction Works</h2>
+                            <p>Our tool uses PDF.js to parse the internal text content streams of your PDF. PDF.js reads the text objects embedded in each page and assembles them into readable text. The extracted text is displayed for review and can be downloaded as a plain .txt file.</p>
+                            <br>
+                            <h2>Text Extraction vs OCR</h2>
+                            <p>Text extraction works on PDFs that have a real text layer — that is, PDFs created digitally from Word, InDesign, Excel, or similar tools. For scanned PDFs (image-only), where no text layer exists, use our OCR PDF tool first to add a text layer through optical character recognition, then extract the text.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Will the extracted text preserve formatting?</strong><br>Plain text extraction removes rich formatting like columns, tables, and fonts. The text content is preserved, but layout may differ from the original.</p>
+                            <br>
+                            <p><strong>What if no text is extracted?</strong><br>Your PDF is likely image-based (scanned). Use our OCR PDF tool first.</p>
+                        </section>`,
                     desc: 'Extract all text content from PDF files as plain text.',
                     icon: '📝',
                     fileType: '.pdf',
@@ -2204,6 +2727,25 @@
                 },
                   	'extract-images-pdf': {
                     title: 'PDF Image Extractor',
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Extract Images from PDF Online Free</h1>
+                            <p>PDF Image Extractor is a free online tool that finds and extracts all embedded images from your PDF document, making them available to download as individual image files. Recover photos, diagrams, charts, logos, and graphics from any PDF — entirely in your browser with no server upload and no signup required.</p>
+                            <br>
+                            <h2>Why Extract Images from a PDF?</h2>
+                            <p>PDFs often contain valuable images that are not accessible in any other way. Product catalogs, annual reports, design documents, and academic papers frequently include high-quality images embedded inside the PDF. Without an image extractor, the only way to get these images would be to take screenshots — which produces low-quality results.</p>
+                            <br>
+                            <p>Common use cases for PDF image extraction include recovering product photos from supplier catalogs, extracting charts and graphs from reports for use in presentations, recovering logo files embedded in PDFs when original source files are lost, extracting reference images from technical documentation, and archiving images from PDF publications.</p>
+                            <br>
+                            <h2>How It Works</h2>
+                            <p>Our tool uses PDF.js to parse the internal structure of each PDF page and identify embedded image resources. Each image is extracted in its original embedded format (typically JPEG or PNG) and packaged for download. Images are extracted at their embedded resolution — the same quality at which they were originally inserted into the PDF.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>What if no images are found?</strong><br>Your PDF may not contain embedded images in the traditional sense. Some PDFs display images that are actually rendered from vector graphics or page content streams rather than traditional image objects.</p>
+                            <br>
+                            <p><strong>In what format are images extracted?</strong><br>Images are extracted in their original embedded format — most commonly JPEG or PNG.</p>
+                        </section>`,
                     desc: 'Extract all images from PDF files and download as a ZIP.',
                     icon: '🖼️',
                     fileType: '.pdf',
@@ -2371,6 +2913,25 @@
                 },
                   	'pdf-to-json': {
                     title: 'PDF to JSON',
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>PDF to JSON Converter Online Free</h1>
+                            <p>PDF to JSON is a free online tool that extracts the text content, page structure, and metadata from your PDF and exports it as a structured JSON file. Developers, data engineers, and analysts can use the JSON output to process PDF content programmatically, integrate PDF data into APIs, feed it into AI and machine learning pipelines, or store it in databases — all without any server upload.</p>
+                            <br>
+                            <h2>Why Convert PDF to JSON?</h2>
+                            <p>PDF is a presentation format, not a data format. Extracting structured data from PDFs is one of the most common challenges in document automation and data engineering. By converting PDF content to JSON, you get a machine-readable, structured representation of the document that can be easily processed by code.</p>
+                            <br>
+                            <p>Use cases include building document search systems, feeding PDF data into large language model (LLM) pipelines for AI processing, extracting metadata for document management systems, processing invoices and contracts in automated workflows, indexing PDF libraries for content retrieval, and migrating document content to databases or content management systems.</p>
+                            <br>
+                            <h2>What Data is Included in the JSON Output?</h2>
+                            <p>The JSON output includes extracted text content organized by page, document metadata (title, author, creation date, modification date), page dimensions, and text item positions where available. This gives you both the content and structural context needed for most document processing applications.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Can the JSON be parsed by any programming language?</strong><br>Yes. The output is standard JSON that can be read by Python, JavaScript, Java, PHP, Ruby, Go, and virtually any modern programming language.</p>
+                            <br>
+                            <p><strong>Does it work on scanned PDFs?</strong><br>Scanned PDFs need a text layer first. Use our OCR PDF tool to add searchable text, then convert to JSON for best results.</p>
+                        </section>`,
                     desc: 'Convert PDF metadata and content structure to JSON format.',
                     icon: '📄➔{ }',
                     fileType: '.pdf',
@@ -2608,6 +3169,25 @@
                 },
                   	'compare-pdf': {
                     title: 'PDF File Comparator',
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Compare PDF Files Online Free</h1>
+                            <p>PDF File Comparator is a free online tool that analyzes two PDF files and highlights the differences between them. Upload the original and revised versions of a PDF, and the tool identifies what text has been added, removed, or changed — making document review, version control, and compliance checking fast and accurate. All comparison happens in your browser with no file upload.</p>
+                            <br>
+                            <h2>Why Compare PDF Files?</h2>
+                            <p>Document version control is a critical part of any professional workflow involving contracts, reports, policies, technical specifications, legal filings, and regulatory submissions. Manually reading through two versions of a long document to spot changes is time-consuming and error-prone. Our PDF comparison tool automates this process, instantly highlighting exactly what changed between versions.</p>
+                            <br>
+                            <p>Common use cases include reviewing contract amendments to identify changed clauses, comparing draft and final versions of reports, verifying that a corrected document has only the intended changes, compliance auditing to ensure document integrity, academic peer review of revised papers, and quality control in document-heavy industries like legal, finance, and healthcare.</p>
+                            <br>
+                            <h2>How the Comparison Works</h2>
+                            <p>The tool extracts the text content from both PDFs using PDF.js, then performs a text difference analysis between the two documents. Differences — additions, deletions, and changes — are identified and displayed in a side-by-side or annotated view. The comparison is text-based, meaning it works best on PDFs with a searchable text layer.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Does it compare images or formatting?</strong><br>The current comparison is text-based. Visual layout differences and image changes are not detected.</p>
+                            <br>
+                            <p><strong>Does it work on scanned PDFs?</strong><br>Scanned PDFs need to be processed with our OCR PDF tool first to add a text layer before comparison.</p>
+                        </section>`,
                     desc: 'Compare two PDF files and highlight differences in text content.',
                     icon: '⚖️',
                     fileType: '.pdf',
@@ -2825,6 +3405,25 @@
                 },
                   	'remove-pdf-background': {
                     title: 'PDF Background Remover',
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>Remove PDF Background Online Free</h1>
+                            <p>PDF Background Remover is a free online tool that cleans up the background of your PDF pages, replacing colored, grey, or off-white backgrounds with a clean white background. Perfect for scanned documents with paper texture, PDFs with colored design backgrounds, or any document where a clean white background is needed for better readability or printing. All processing runs in your browser — no file upload required.</p>
+                            <br>
+                            <h2>Why Remove PDF Backgrounds?</h2>
+                            <p>Scanned documents often have backgrounds that are not pure white. Aged paper appears yellow or grey when scanned. Some scanners pick up paper texture or slight shadows. Documents scanned under poor lighting conditions may have uneven grey backgrounds. PDFs created from templates with colored backgrounds may need cleaning up before printing on plain white paper or submitting to document portals that expect clean white backgrounds.</p>
+                            <br>
+                            <p>A clean white background also reduces file size when the PDF is compressed, improves OCR accuracy on scanned documents, makes the document look more professional, and ensures consistent appearance when printing on white paper.</p>
+                            <br>
+                            <h2>How the Background Removal Works</h2>
+                            <p>The tool renders each PDF page as a canvas image, applies a background color detection and replacement algorithm to identify and neutralize light background colors, and re-embeds the cleaned image back into the PDF. The result is a PDF with clean white page backgrounds while preserving all text, images, and other content.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Will it affect my text or images?</strong><br>The algorithm targets background areas — large regions of uniform light color. Text and embedded images with distinct colors are preserved.</p>
+                            <br>
+                            <p><strong>Does it work on intentionally colored design PDFs?</strong><br>Yes, but use with care — design PDFs with meaningful colored backgrounds will have those backgrounds removed too.</p>
+                        </section>`,
                     desc: 'Remove background colors and images from PDF pages.',
                     icon: '🎨',
                     fileType: '.pdf',
@@ -2903,6 +3502,27 @@
 
                     'pdf-thumbnail-generator': {
                         title: 'PDF Thumbnail Generator',
+
+                      content: `
+                        <section class="tool-content">
+                            <h1>PDF Thumbnail Generator Online Free</h1>
+                            <p>PDF Thumbnail Generator is a free online tool that renders thumbnail preview images of your PDF pages. Generate small, high-quality JPEG or PNG preview images of each page in your PDF — perfect for document management systems, content preview interfaces, website document listings, email previews, and any application that needs a visual snapshot of a PDF document. All rendering runs in your browser with no file upload.</p>
+                            <br>
+                            <h2>Who Needs PDF Thumbnails?</h2>
+                            <p>PDF thumbnails are essential for any application or workflow that involves displaying or browsing PDF documents visually. Web developers building document management platforms need thumbnails for grid-view document browsers. Email marketing platforms use PDF thumbnails to preview attachments in campaign emails. E-learning platforms display course material thumbnails for navigation. Digital libraries and archives show cover thumbnails for browsable document collections.</p>
+                            <br>
+                            <p>Without a thumbnail, a PDF appears as a generic file icon — giving the viewer no visual context about the document content. A clear, accurate thumbnail immediately communicates what the document is about and encourages engagement.</p>
+                            <br>
+                            <h2>How the Thumbnail Generation Works</h2>
+                            <p>Our tool uses PDF.js to render each page of your PDF on an HTML canvas at a reduced scale. The rendered canvas is exported as a compressed image file (JPEG or PNG). Multiple thumbnail images are packaged together for easy download. The thumbnail scale is optimized to produce clear, readable previews that are small enough for fast loading in web interfaces.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>What size are the thumbnail images?</strong><br>Thumbnails are generated at a standard preview scale — typically around 200-300px wide — suitable for most document browser interfaces.</p>
+                            <br>
+                            <p><strong>Can I generate a thumbnail for just the first page?</strong><br>All pages are processed. To get only the first-page thumbnail, simply use the first image from the downloaded set.</p>
+                            <br>
+                            <p><strong>What format are the thumbnails?</strong><br>Thumbnails are exported as JPEG images for compact file size and fast loading.</p>
+                        </section>`,
                         desc: 'Generate preview thumbnails from PDF pages in various sizes. (Coming Soon)',
                         icon: '🖼️',
                         fileType: '.pdf',
