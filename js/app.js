@@ -75,19 +75,39 @@
                         title: 'Merge PDF', desc: 'Combine multiple PDF files into one.', icon: '➕', fileType: '.pdf', multiple: true,
                       	content: `
                         <section class="tool-content">
-                            <h2>Merge PDF Online</h2>
-                            <p>
-                          	Merge PDF is a powerful online tool that helps you merge PDF files and combine PDF files into a single PDF directly in your web browser. This 							  merge tool allows users to upload documents from Google Drive, cloud storage, or simply drop files on the webpage. Using this PDF editor, you 							can organize pages, reorder content, and merge documents without installing PDF software.
-							</p>	
-      						</br>
-							<p>
-							This solution works smoothly for PDF files online, supports multiple file formats, and allows merging selected pages into a single PDF. 								Whether you are handling large PDF files, business documents, or Real Estate paperwork, this tool simplifies the merging process. It works on 							  Windows 10 and all modern systems with an active Internet connection.
-							</p>
-      						</br>
-							<p>
-							Unlike Adobe Acrobat or other third party tools that require a free trial, this free tool offers a simple step-by-step guide to merge PDFs 								securely and efficiently.
-                            </p>
-							</section>`,
+                            <h1>Merge PDF Files Online Free</h1>
+                            <p>Merge PDF is a powerful, free online tool that combines multiple PDF files into a single unified document directly in your web browser. Whether you need to consolidate business reports, combine chapters of an eBook, merge scanned invoices, or assemble multi-part contracts into one file, this free PDF merger handles it instantly — no software installation, no signup, no server upload.</p>
+                            <br>
+                            <h2>Why Merge PDF Files?</h2>
+                            <p>Managing multiple separate PDF files for a single project or submission is inefficient and unprofessional. Merging PDFs into one document makes it easier to share a complete package with colleagues or clients, submit multi-document applications to government portals or employers, maintain organized digital archives, print multi-section documents in correct order, and reduce the hassle of managing and attaching multiple files in emails.</p>
+                            <br>
+                            <p>Common use cases include combining monthly financial reports into a single annual PDF, merging multiple scanned pages from a flatbed scanner into one document, assembling legal exhibit bundles for court submissions, combining research papers and references for academic work, and packaging project deliverables into a single client-ready PDF.</p>
+                            <br>
+                            <h2>How the PDF Merge Tool Works</h2>
+                            <p>Our tool uses PDF-lib — a powerful JavaScript library — to load each of your selected PDF files, extract all their pages, and assemble them into a new single PDF document. The merging happens entirely inside your web browser with zero server communication. Your files are never uploaded to any external server at any point.</p>
+                            <br>
+                            <p>Simply select multiple PDF files at once using the file picker, or drag and drop them into the upload area. The files are merged in the order you select them. Click Process and your combined PDF is ready to download immediately.</p>
+                            <br>
+                            <h2>Key Features of Our PDF Merger</h2>
+                            <p><strong>Merge Unlimited Files:</strong> Combine as many PDF files as you need in a single operation — two files, ten files, or more.<br>
+                            <strong>Preserve Quality:</strong> All text, images, fonts, and formatting from original PDFs are preserved perfectly in the merged output.<br>
+                            <strong>Browser-Based Privacy:</strong> Files never leave your device. No cloud processing, no server storage.<br>
+                            <strong>No File Size Limit:</strong> No arbitrary restrictions on file size — only your browser memory sets the practical limit.<br>
+                            <strong>100% Free:</strong> No subscription, no trial, no credit card required. Completely free forever.<br>
+                            <strong>Cross-Platform:</strong> Works on Windows, macOS, Linux, iOS, and Android in any modern browser.</p>
+                            <br>
+                            <h2>Tips for Best Results</h2>
+                            <p>For best results, ensure your PDF files are not password-protected before merging. If they are, use our Unlock PDF tool first to remove the password. Select your files in the exact order you want them to appear in the merged PDF — the first file selected becomes the first section of the merged document. For very large PDF collections, merging in batches and then merging the results may improve browser performance.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>How many PDF files can I merge at once?</strong><br>There is no hard limit on the number of files. You can merge as many PDFs as you need. Practical limits depend on your device memory and browser.</p>
+                            <br>
+                            <p><strong>Will the page order be correct?</strong><br>Yes. Pages are merged in the order you select the files. Select File A first and File B second, and File A's pages will appear before File B's pages in the output.</p>
+                            <br>
+                            <p><strong>Do merged PDFs lose quality?</strong><br>No. PDF-lib performs a lossless merge — no re-encoding of images or re-rendering of content. Quality is identical to the originals.</p>
+                            <br>
+                            <p><strong>Can I merge password-protected PDFs?</strong><br>Password-protected PDFs cannot be merged directly. Use our Unlock PDF tool to remove the password first, then merge.</p>
+                        </section>`,
                         process: async (files) => {
                             const mergedPdf = await PDFDocument.create();
                             for (const file of files) {
@@ -104,19 +124,36 @@
                         title: 'Split PDF', desc: 'Extract specific pages or ranges from a PDF.', icon: '✂️', fileType: '.pdf', multiple: false,
                       	content: `
                         <section class="tool-content">
-                            <h2>Split PDF Online</h2>
-                            <p>
-                                Split PDF is an easy and reliable way to split PDF files and manage PDFs online without installing heavy PDF software. This online PDF 									splitter allows you to extract pages, split PDF pages, and separate PDF pages using exact page numbers or page ranges. With accurate PDF 								 splitting based on page count, you can quickly create smaller files for sharing or storage.
-                            </p>
-							</br>
-                            <p>
-                                Simply drop files from your device or Google Drive and start using this powerful PDF editor directly from your webpage. Whether you want 								 to Extract PDF, Split Pages, or Create PDF documents, this tool works smoothly on Windows 10 and all modern browsers.
-                            </p>
-                            </br>
-							<p>
-							
-                            This Split PDF solution supports multiple formats including PDF Word, Word PDF, PDF JPG, PDF GIF, and PDF TIFF, making it a practical 									alternative to Adobe Acrobat without a costly free trial. Perfect for everyday Use Cases, this tool helps you split files securely and 									efficiently.
-                            </p>                            
+                            <h1>Split PDF Online Free</h1>
+                            <p>Split PDF is a fast, free, browser-based tool that extracts specific pages or page ranges from any PDF document and saves them as a new, smaller PDF file. Whether you need a single page, a specific chapter, or a custom range of pages, this free PDF splitter delivers the result instantly — with no software installation, no server upload, and no signup required.</p>
+                            <br>
+                            <h2>Why Split a PDF File?</h2>
+                            <p>PDF documents are often large, multi-section files that contain more content than any particular recipient needs to see. Splitting a PDF lets you extract only the relevant pages for sharing, reduce file size before emailing or uploading, separate chapters or sections for individual distribution, extract invoices from bulk billing PDFs, isolate specific pages for review or approval, and create focused documents from large reports or manuals.</p>
+                            <br>
+                            <p>For example, if you receive a 200-page annual report and need to share only the financial summary on pages 45-52, our Split PDF tool extracts just those pages as a clean, standalone PDF in seconds. No need to print, scan, or use expensive desktop software.</p>
+                            <br>
+                            <h2>How to Split a PDF</h2>
+                            <p>Upload your PDF using the file selector or drag and drop. Enter your desired page range in the input field — for example, enter 1-5 to extract the first five pages, or 3, 7, 10-15 to extract a custom combination of pages and ranges. Click Process and your extracted pages are packaged as a new PDF ready to download.</p>
+                            <br>
+                            <h2>Page Range Syntax Guide</h2>
+                            <p><strong>Single page:</strong> Enter 5 to extract page 5 only.<br>
+                            <strong>Consecutive range:</strong> Enter 3-8 to extract pages 3 through 8.<br>
+                            <strong>Multiple pages:</strong> Enter 1, 5, 9 to extract pages 1, 5, and 9.<br>
+                            <strong>Mixed:</strong> Enter 1-3, 7, 10-12 to extract pages 1, 2, 3, 7, 10, 11, and 12.</p>
+                            <br>
+                            <h2>Key Features</h2>
+                            <p><strong>Flexible Page Selection:</strong> Individual pages, ranges, and mixed combinations all supported.<br>
+                            <strong>Quality Preserved:</strong> Extracted pages are identical to the originals — no re-rendering or quality loss.<br>
+                            <strong>Completely Private:</strong> Your PDF never leaves your device. All processing is local in the browser.<br>
+                            <strong>No Page Limit:</strong> Split PDFs of any length — from 2 pages to thousands.<br>
+                            <strong>Instant Download:</strong> Your split PDF is ready to download the moment processing completes.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Can I split a PDF into multiple separate files?</strong><br>Currently the tool creates one output PDF from your specified page selection. To create multiple separate files, run the tool multiple times with different page ranges each time.</p>
+                            <br>
+                            <p><strong>What happens to the original PDF?</strong><br>Your original PDF is never modified. The tool creates a new PDF from the selected pages. Your original file remains intact on your device.</p>
+                            <br>
+                            <p><strong>Can I split a password-protected PDF?</strong><br>Use our Unlock PDF tool first to remove the password, then split the unlocked version.</p>
                         </section>`,
                         options: (container) => {
                             container.innerHTML = `<label for="page-ranges">Page ranges (e.g., 1-3, 5, 7-9):</label>
@@ -225,19 +262,34 @@
                         title: 'PDF to Word (TXT)', desc: 'Convert PDF content to a plain text file.', icon: '📄➔🇼', fileType: '.pdf', multiple: false,
 						content: `
                         <section class="tool-content">
-                            <h2>PDF to Word Converter</h2>
-                            <p>
-                          	PDF to Word is a smart Word converter that helps you Convert PDF files into editable Word documents quickly and accurately. This PDF to Word 							 tool allows users to transform any PDF document into Word PDF format using a modern PDF editor available directly in your web browser.
-							</p>	
-      						</br>
-							<p>
-							The converter preserves layout, text, and formatting, making it easy to edit content using standard PDF Tools. You can upload files from 								Google Drive, cloud storage, or simply drop files onto the webpage. This online tool supports multiple file formats, including PDF Word, PDF 							 JPG, and more.
-							</p>
-      						</br>
-							<p>
-							Designed for professionals, students, and Real Estate use cases, this solution works seamlessly on Windows 10 with an active Internet 									connection. Unlike Adobe Acrobat or other third party software requiring a free trial, this free tool lets you convert PDFs efficiently 								without installing heavy PDF software.
-                            </p>
-							</section>`, 
+                            <h1>PDF to Word Converter Online Free</h1>
+                            <p>PDF to Word converter is a free, browser-based tool that extracts all text content from your PDF document and exports it as an editable text file. Recover the written content from any PDF — reports, contracts, articles, academic papers, or forms — without retyping a single word. No software installation, no server upload, no signup required.</p>
+                            <br>
+                            <h2>Why Convert PDF to Word?</h2>
+                            <p>PDFs are designed for fixed-layout presentation, not for editing. When you receive a PDF and need to edit its content, quote from it, translate it, or repurpose it in a new document, you need access to the raw text. Our PDF to Word converter extracts all readable text from the PDF so you can paste it into Microsoft Word, Google Docs, or any text editor and work with it freely.</p>
+                            <br>
+                            <p>Typical use cases include editing received contracts or agreements that were sent as PDFs, extracting article text for research, translation, or summarization, recovering the text from a PDF when the original Word document is lost, pulling data from PDF reports for further analysis or formatting, converting PDF resumes into editable Word format for updating, and repurposing PDF content for new documents or presentations.</p>
+                            <br>
+                            <h2>How the Conversion Works</h2>
+                            <p>Our tool uses PDF.js to parse the internal text content streams of your PDF. PDF.js reads the text objects embedded in each page of the document and assembles them into readable text in reading order. The extracted text is compiled page by page, with page breaks preserved, and made available as a downloadable .txt file that opens in Microsoft Word, Google Docs, Notepad, and any other text application.</p>
+                            <br>
+                            <h2>Text Extraction vs Full Formatting Conversion</h2>
+                            <p>This tool performs text extraction — it recovers the written content of your PDF accurately and completely. Complex formatting elements like tables, columns, headers, footers, and images are not reconstructed in the output. The output is clean, readable plain text suitable for editing and repurposing. For PDFs where preserving visual layout is critical, consider using our Edit PDF tool instead.</p>
+                            <br>
+                            <h2>Key Features</h2>
+                            <p><strong>Full Text Recovery:</strong> Every readable word in your PDF is extracted accurately.<br>
+                            <strong>Multi-Page Support:</strong> All pages are extracted in order, with page breaks preserved.<br>
+                            <strong>No Server Upload:</strong> Your PDF never leaves your browser — complete privacy guaranteed.<br>
+                            <strong>Instant Output:</strong> Extraction completes in seconds for most PDFs.<br>
+                            <strong>Universal Compatibility:</strong> The .txt output opens in any word processor or text editor.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Will tables and formatting be preserved?</strong><br>Plain text extraction recovers the text content accurately but does not reconstruct table layouts or multi-column formatting. The text will be in reading order but visual formatting is not retained.</p>
+                            <br>
+                            <p><strong>What if nothing is extracted?</strong><br>Your PDF is likely scanned (image-based) with no text layer. Use our OCR PDF tool first to add a searchable text layer, then convert to Word.</p>
+                            <br>
+                            <p><strong>Can I open the output in Microsoft Word?</strong><br>Yes. The .txt file opens directly in Word. You can then reformat and style the content as needed in Word.</p>
+                        </section>`, 
                         process: async (files) => {
                             const file = files[0];
                             const pdfBytes = await file.arrayBuffer();
@@ -320,19 +372,31 @@
                         title: 'Word to PDF', desc: 'Convert DOCX files to PDF.', icon: '🇼➔📄', fileType: '.docx', multiple: false,
                       	content: `
                         <section class="tool-content">
-                            <h2>Word to PDF Converter</h2>
-                            <p>
-							Word to PDF Converter helps you convert DOC or DOCX files into professional-quality PDF documents. This ensures consistent formatting 
-                            across devices and platforms.
-							</p>	
-      						</br>
-							<p>
-							The tool is perfect for sharing official documents, assignments, or reports. Conversion is instant, secure, and requires no 
-                            software installation.
-							</p>
-      						</br>
-							<p>
-							Enjoy clean PDFs without watermarks or file size restrictions.                            
+                            <h1>Word to PDF Converter Online Free</h1>
+                            <p>Word to PDF converter is a free, browser-based tool that transforms Microsoft Word DOCX documents into universally compatible PDF files. Share your documents with anyone on any device — without requiring them to have Microsoft Word installed. No software download, no signup, no file upload to any server required.</p>
+                            <br>
+                            <h2>Why Convert Word Documents to PDF?</h2>
+                            <p>Microsoft Word documents look different depending on which version of Word the recipient has, which operating system they are using, and which fonts are installed on their device. PDF eliminates all of these variables — a PDF always looks exactly the same, on every device, every operating system, and every PDF reader in the world.</p>
+                            <br>
+                            <p>Converting to PDF is essential before submitting job applications, academic assignments, or government forms that require PDF format, before sending client proposals or business reports that must look professional on any screen, when sharing documents that should not be easily edited by recipients, and when printing documents where layout consistency is critical.</p>
+                            <br>
+                            <h2>How the Conversion Works</h2>
+                            <p>Our tool uses mammoth.js to read your DOCX file and extract its content, then renders it as an HTML document, which is converted to PDF using html2pdf.js — all running locally in your browser. The conversion preserves headings, paragraphs, bold and italic text, and basic document structure. Your Word file never leaves your device at any point during conversion.</p>
+                            <br>
+                            <h2>Key Features</h2>
+                            <p><strong>No Word Required:</strong> Convert DOCX files without Microsoft Office installed.<br>
+                            <strong>Privacy First:</strong> Your document is processed entirely in the browser — never uploaded.<br>
+                            <strong>No Watermarks:</strong> The output PDF is completely clean — no branding or watermarks added.<br>
+                            <strong>Instant Conversion:</strong> Most documents convert in seconds.<br>
+                            <strong>Free Forever:</strong> No subscription, no page limits, no account needed.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Will complex Word formatting be preserved?</strong><br>Basic formatting — headings, paragraphs, bold, italic — is preserved well. Advanced layouts like multi-column text, custom styles, and embedded objects may not render perfectly in the browser-based conversion.</p>
+                            <br>
+                            <p><strong>Does it support .doc files (older Word format)?</strong><br>Currently DOCX (Word 2007 and later) is supported. For older .doc files, open them in Word and save as DOCX first.</p>
+                            <br>
+                            <p><strong>Is there a file size limit?</strong><br>No strict limit. Very large DOCX files with many embedded images may take longer to process in the browser.</p>
+                        </section>`,
       						</p>
 							</section>`,
                         process: async (files) => {
@@ -704,20 +768,32 @@
                         title: 'PDF to JPG', desc: 'Convert PDF pages to JPG images.', icon: '📄➔🖼️J', fileType: '.pdf', multiple: false,
                       	content: `
                         <section class="tool-content">
-                            <h2>PDF to JPG Converter</h2>
-                            <p>
-							PDF to JPG Converter extracts pages from your PDF and converts them into high-quality image files. This is useful for presentations, 
-                        	image previews, and document sharing.
-							</p>	
-      						</br>
-							<p>
-							You can convert single or multiple pages with ease. The tool preserves image clarity and resolution during conversion.
-							</p>
-      						</br>
-							<p>
-							All operations happen locally in your browser, keeping your files safe and private.                            
-      						</p>
-							</section>`,
+                            <h1>PDF to JPG Converter Online Free</h1>
+                            <p>PDF to JPG is a free, browser-based converter that renders every page of your PDF document as a high-quality JPEG image file. Convert PDF pages to images for presentations, social media, websites, previews, or any use case that requires images instead of PDF — instantly, privately, and completely free.</p>
+                            <br>
+                            <h2>Why Convert PDF Pages to JPG?</h2>
+                            <p>PDF files cannot be directly displayed in many applications and platforms that only support image formats. Converting PDF pages to JPG solves this compatibility problem across a wide range of use cases. Insert PDF content into PowerPoint presentations as image slides. Share PDF pages on social media platforms like Instagram, Twitter, or LinkedIn that do not support PDF uploads. Create image previews for PDF documents displayed on websites or in document management systems. Embed PDF page content into Word documents or Google Docs as images. Send PDF pages via messaging apps that display images inline but not PDFs.</p>
+                            <br>
+                            <h2>How the PDF to JPG Conversion Works</h2>
+                            <p>Our tool uses PDF.js to render each page of your PDF on an HTML canvas at high resolution (1.5x scale). The rendered canvas is then exported as a JPEG image at high quality. For single-page PDFs, the image downloads directly. For multi-page PDFs, all page images are packaged into a ZIP archive for easy bulk download.</p>
+                            <br>
+                            <h2>JPG vs PNG — Which Format to Choose?</h2>
+                            <p>JPG uses lossy compression — it produces smaller files but with slight quality reduction, especially around sharp text edges. JPG is best when file size matters and the PDF contains primarily photographs or complex graphics. PNG uses lossless compression and is better for PDFs with sharp text, diagrams, charts, or logos. Use our PDF to PNG tool if you need lossless quality. Use PDF to JPG when you need compact image files for web use or sharing.</p>
+                            <br>
+                            <h2>Key Features</h2>
+                            <p><strong>High Resolution Output:</strong> Pages rendered at 1.5x scale for sharp, clear images.<br>
+                            <strong>All Pages Converted:</strong> Every page becomes a separate JPG image automatically.<br>
+                            <strong>ZIP Download:</strong> Multi-page PDFs are packaged as a ZIP for convenient bulk download.<br>
+                            <strong>No Server Upload:</strong> All conversion runs locally in your browser — complete privacy.<br>
+                            <strong>Free and Unlimited:</strong> No page limits, no file size limits, no signup required.</p>
+                            <br>
+                            <h2>Frequently Asked Questions</h2>
+                            <p><strong>Can I convert just one page of a PDF to JPG?</strong><br>Use our Split PDF tool first to extract the specific page, then convert the single-page PDF to JPG.</p>
+                            <br>
+                            <p><strong>What resolution are the output JPG images?</strong><br>Pages are rendered at 1.5x the native PDF resolution. For most documents this produces images of approximately 1000-1500px wide.</p>
+                            <br>
+                            <p><strong>How do I download all the JPG images?</strong><br>For multi-page PDFs, all images are bundled into a ZIP file. Click the download link to save the ZIP, then extract it to access all individual JPG files.</p>
+                        </section>`,
                         options: (container) => {
                              container.innerHTML = `<label for="jpg-quality">JPG Quality (0.1 - 1.0):</label>
                                                  <input type="range" id="jpg-quality" min="0.1" max="1.0" step="0.1" value="0.8">
@@ -3523,12 +3599,44 @@
                             <br>
                             <p><strong>What format are the thumbnails?</strong><br>Thumbnails are exported as JPEG images for compact file size and fast loading.</p>
                         </section>`,
-                        desc: 'Generate preview thumbnails from PDF pages in various sizes. (Coming Soon)',
+                        desc: 'Generate preview thumbnail images from each page of a PDF.',
                         icon: '🖼️',
                         fileType: '.pdf',
                         multiple: false,
-                        isPlaceholder: true,
-                      	isNew: true
+                        isNew: true,
+                        process: async (files) => {
+                            this.showLoader('Generating thumbnails...');
+                            const file = files[0];
+                            const pdfBytes = await file.arrayBuffer();
+                            const pdf = await pdfjsLib.getDocument({ data: pdfBytes }).promise;
+                            const zip = new JSZip();
+                            const outputDiv = document.getElementById('output-area');
+                            outputDiv.innerHTML = '<p>Thumbnails generated:</p>';
+                            for (let i = 1; i <= pdf.numPages; i++) {
+                                this.showLoader(`Rendering page ${i}/${pdf.numPages}...`);
+                                const page = await pdf.getPage(i);
+                                const viewport = page.getViewport({ scale: 0.4 });
+                                const canvas = document.createElement('canvas');
+                                canvas.width = viewport.width;
+                                canvas.height = viewport.height;
+                                await page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise;
+                                const blob = await new Promise(r => canvas.toBlob(r, 'image/jpeg', 0.85));
+                                const arrayBuf = await blob.arrayBuffer();
+                                zip.file(`thumbnail_page_${i}.jpg`, arrayBuf);
+                                const img = document.createElement('img');
+                                img.src = canvas.toDataURL('image/jpeg', 0.85);
+                                img.style.cssText = 'max-width:150px;margin:4px;border:1px solid #444;border-radius:4px;';
+                                outputDiv.appendChild(img);
+                            }
+                            const zipBlob = await zip.generateAsync({ type: 'blob' });
+                            const url = URL.createObjectURL(zipBlob);
+                            const a = document.createElement('a');
+                            a.href = url; a.download = 'thumbnails.zip'; a.className = 'btn';
+                            a.textContent = 'Download All Thumbnails (ZIP)';
+                            outputDiv.appendChild(document.createElement('br'));
+                            outputDiv.appendChild(a);
+                            this.hideLoader();
+                        }
                     }
 
                 };
@@ -3803,7 +3911,6 @@
                         <div class="tool-card-icon">${tool.icon || '⚙️'}</div>
                         <h3>${tool.title}</h3>
                         <p>${descText}</p>
-                        ${tool.isNew ? '<span class="new-badge">New!</span>' : ''}
                     `;
 
                     if (!tool.isPlaceholder) {
