@@ -397,8 +397,6 @@
                             <br>
                             <p><strong>Is there a file size limit?</strong><br>No strict limit. Very large DOCX files with many embedded images may take longer to process in the browser.</p>
                         </section>`,
-      						</p>
-							</section>`,
                         process: async (files) => {
                             this.showLoader('Converting Word to PDF...');
                             const file = files[0];
