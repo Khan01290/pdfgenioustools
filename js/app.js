@@ -3981,11 +3981,17 @@
                     }
                 }
 
-                this.modal.style.display = 'flex';
-                document.body.style.overflow = 'hidden'; 
+                // On standalone tool pages the modal is already visible inline —
+                // skip the overlay show and body scroll-lock.
+                if (!document.body.classList.contains('standalone-tool-page')) {
+                    this.modal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                }
             }
 
             closeModal(skipUrlUpdate) {
+                // Don't close on standalone tool pages
+                if (document.body.classList.contains('standalone-tool-page')) return;
                 this.modal.style.display = 'none';
                 this.resetModal();
                 this.currentTool = null;

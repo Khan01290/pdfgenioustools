@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redact PDF Online Free — Remove Sensitive Text | PDF Genius Tools</title>
+  <title>Redact PDF Online Free | PDF Genius Tools</title>
   <meta name="description" content="Redact sensitive information from PDF files online free. Permanently remove confidential text and images.">
   <link rel="canonical" href="https://www.pdfgeniustools.online/redact-pdf">
-  <meta property="og:title" content="Redact PDF Online Free — Remove Sensitive Text | PDF Genius Tools">
+  <meta property="og:title" content="Redact PDF Online Free | PDF Genius Tools">
   <meta property="og:description" content="Redact sensitive information from PDF files online free. Permanently remove confidential text and images.">
   <meta property="og:url" content="https://www.pdfgeniustools.online/redact-pdf">
   <meta property="og:site_name" content="PDF Genius Tools">
@@ -20,62 +20,43 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.pdfgeniustools.online/"},{"@type":"ListItem","position":2,"name":"Redact PDF Online Free","item":"https://www.pdfgeniustools.online/redact-pdf"}]}</script>
   <link rel="stylesheet" href="/css/style.css">
   <style>
-    /* ── Standalone page overrides ── */
-    /* Hide the floating modal overlay; show content inline */
-    #tool-modal {
-      position: static !important;
-      display: block !important;
-      background: none !important;
-      z-index: auto !important;
-      overflow: visible !important;
+    /* ── Inline tool styles (no modal overlay) ── */
+    .tool-inline-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--card-bg, #1e1e2e);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 2px 16px rgba(0,0,0,.2);
     }
-    #tool-modal .modal-content {
-      position: static !important;
-      width: 100% !important;
-      max-width: 860px !important;
-      margin: 0 auto !important;
-      border-radius: 12px !important;
-      box-shadow: 0 2px 16px rgba(0,0,0,.2) !important;
-      max-height: none !important;
-      overflow: visible !important;
-    }
-    /* Hide close button — no modal to close */
-    #modal-close-btn { display: none !important; }
-    /* Hide modal title — we have h1 in hero */
-    .modal-header { display: none !important; }
-    /* Stop body scroll lock */
-    body { overflow: auto !important; }
     /* Hero */
-    .sp-hero{background:var(--hero-bg,linear-gradient(135deg,#1a1a2e 0%,#16213e 100%));padding:36px 0 20px;text-align:center;}
+    .sp-hero{background:var(--hero-bg,linear-gradient(135deg,#1a1a2e 0%,#16213e 100%));padding:32px 0 20px;text-align:center;}
     .sp-hero h1{font-size:clamp(1.4rem,4vw,2rem);margin:0 0 .4rem;color:var(--text-primary,#fff);}
-    .sp-hero p{color:var(--text-secondary,#aaa);max-width:600px;margin:0 auto 10px;font-size:.97rem;}
+    .sp-hero p.sub{color:var(--text-secondary,#aaa);max-width:600px;margin:0 auto 10px;font-size:.97rem;}
     .sp-badges{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:10px;}
     .sp-badge{background:rgba(229,62,62,.12);border:1px solid rgba(229,62,62,.3);border-radius:20px;padding:4px 12px;font-size:.8rem;color:#e53e3e;}
-    /* Wrapper */
-    .sp-wrap{max-width:900px;margin:0 auto;padding:24px 16px;}
-    /* Tool box */
-    .tool-box{background:var(--card-bg,#1e1e2e);border-radius:12px;padding:4px;margin-bottom:24px;box-shadow:0 2px 14px rgba(0,0,0,.2);}
-    /* SEO content cards */
-    .seo-card{background:var(--card-bg,#1e1e2e);border-radius:12px;padding:26px;margin-bottom:20px;box-shadow:0 2px 14px rgba(0,0,0,.15);}
-    .seo-card h2{font-size:1.15rem;margin:0 0 10px;color:var(--text-primary,#fff);}
-    .seo-card h3{font-size:1rem;margin:14px 0 6px;color:var(--text-primary,#fff);}
-    .seo-card p,.seo-card li{color:var(--text-secondary,#bbb);line-height:1.75;margin:0 0 10px;}
+    /* Page wrap */
+    .sp-wrap{max-width:900px;margin:0 auto;padding:20px 16px 32px;}
+    /* SEO content */
+    .seo-card{background:var(--card-bg,#1e1e2e);border-radius:12px;padding:24px;margin-bottom:18px;box-shadow:0 2px 12px rgba(0,0,0,.15);}
+    .seo-card h2{font-size:1.12rem;margin:0 0 10px;color:var(--text-primary,#fff);}
+    .seo-card p,.seo-card li{color:var(--text-secondary,#bbb);line-height:1.75;margin:0 0 8px;}
     .seo-card strong{color:var(--text-primary,#fff);}
     .seo-card a{color:#e53e3e;}
-    /* Related tools */
-    .rel-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
-    .rel-link{display:inline-block;background:var(--card-bg,#1e1e2e);border:1px solid var(--border,#333);border-radius:8px;padding:7px 12px;color:var(--text-primary,#fff);text-decoration:none;font-size:.86rem;transition:background .18s,color .18s;}
-    .rel-link:hover{background:#e53e3e;color:#fff;border-color:#e53e3e;}
-    /* tool-seo-content-wrapper from app.js */
-    .tool-seo-content-wrapper{padding:8px 0 4px;}
-    .tool-content h1{font-size:1.25rem;margin:0 0 10px;color:var(--text-primary,#fff);}
-    .tool-content h2{font-size:1.05rem;margin:16px 0 6px;color:var(--text-primary,#fff);}
-    .tool-content p{color:var(--text-secondary,#bbb);line-height:1.7;margin:0 0 10px;}
+    /* tool-content injected by app.js */
+    .tool-seo-content-wrapper{margin-top:8px;}
+    .tool-content h1{font-size:1.2rem;margin:0 0 8px;color:var(--text-primary,#fff);}
+    .tool-content h2{font-size:1rem;margin:14px 0 5px;color:var(--text-primary,#fff);}
+    .tool-content p{color:var(--text-secondary,#bbb);line-height:1.7;margin:0 0 8px;}
     .tool-content br{display:none;}
+    /* Related */
+    .rel-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
+    .rel-link{display:inline-block;background:var(--card-bg,#1e1e2e);border:1px solid var(--border,#333);border-radius:8px;padding:6px 12px;color:var(--text-primary,#fff);text-decoration:none;font-size:.85rem;transition:background .15s,color .15s;}
+    .rel-link:hover{background:#e53e3e;color:#fff;border-color:#e53e3e;}
   </style>
 </head>
-<body>
-  <!-- Required elements that app.js looks for on DOMContentLoaded -->
+<body class="standalone-tool-page">
+  <!-- current-year used by app.js -->
   <span id="current-year" style="display:none"></span>
 
   <header class="site-header" id="site-header">
@@ -115,17 +96,15 @@
   </nav>
 
   <main>
-    <!-- Breadcrumb -->
     <nav aria-label="breadcrumb" style="max-width:900px;margin:10px auto 0;padding:0 16px;font-size:.84rem;color:var(--text-secondary,#aaa);">
       <a href="/" style="color:#e53e3e;text-decoration:none;">Home</a> &rsaquo; <span>Redact PDF Online Free</span>
     </nav>
 
-    <!-- Hero -->
     <section class="sp-hero">
       <div class="container">
         <div style="font-size:2rem;margin-bottom:8px;">⬛</div>
         <h1>Redact PDF Online Free</h1>
-        <p>Permanently black out sensitive information in a PDF.</p>
+        <p class="sub">Permanently black out sensitive information in a PDF.</p>
         <div class="sp-badges">
           <span class="sp-badge">✅ 100% Free</span>
           <span class="sp-badge">🔒 No File Upload</span>
@@ -137,71 +116,79 @@
 
     <div class="sp-wrap">
 
-      <!-- ═══ TOOL UI — rendered inline by app.js (no modal/popup) ═══ -->
-      <div class="tool-box">
-        <!-- The modal div is styled to display:block / position:static via CSS above.
-             app.js initialises all its DOM refs from these IDs as normal. -->
-        <div id="tool-modal">
-          <div class="modal-content">
-            <div class="modal-main-area">
-              <div class="modal-header">
-                <h2 id="modal-title" class="modal-title">Redact PDF Online Free</h2>
-                <button class="modal-close-btn" id="modal-close-btn" style="display:none">&times;</button>
-              </div>
-              <div class="file-drop-area" id="file-drop-area">
-                <input type="file" id="file-input" multiple>
-                <p>Drag &amp; drop your file(s) here or click to select.</p>
-                <button type="button" class="btn btn-secondary" onclick="document.getElementById('file-input').click();">Select File(s)</button>
-                <p id="file-type-info" style="font-size:0.9em;margin-top:10px;"></p>
-              </div>
-              <div id="file-list"></div>
-              <div id="tool-options"></div>
-              <div id="edit-canvas-container" style="display:none;">
-                <div id="page-controls">
-                  <button id="prev-page" class="btn btn-secondary">Previous</button>
-                  <span id="page-num-display">Page 1/1</span>
-                  <button id="next-page" class="btn btn-secondary">Next</button>
-                </div>
-                <canvas id="pdf-edit-canvas"></canvas>
-                <div id="edit-toolbar" style="margin-top:10px;">
-                  <button id="add-text-btn" class="btn btn-secondary">Add Text</button>
-                  <button id="add-rect-btn" class="btn btn-secondary">Add Rectangle</button>
-                  <button id="draw-mode-btn" class="btn btn-secondary">Draw</button>
-                  <button id="clear-page-btn" class="btn btn-secondary">Clear Page Edits</button>
-                </div>
-              </div>
-              <div id="signature-canvas-container" style="display:none;">
-                <p>Draw your signature below:</p>
-                <canvas id="signature-canvas" width="400" height="200"></canvas>
-                <button id="clear-signature-btn" class="btn btn-secondary" style="margin-top:5px;">Clear Signature</button>
-              </div>
-              <button id="process-btn" class="btn" disabled>Process</button>
-              <div id="output-area"></div>
+      <!-- ═══ INLINE TOOL UI ═══════════════════════════════════════════
+           All the standard modal DOM elements are here but rendered
+           inline. app.js finds them by ID as normal, but because
+           <body> has class "standalone-tool-page", openModal() skips
+           the overlay show and body scroll-lock (patched in app.js).
+      ══════════════════════════════════════════════════════════════════ -->
+      <div class="tool-inline-wrap" id="tool-modal">
+        <div class="modal-content" style="position:static;width:100%;max-height:none;border-radius:0;box-shadow:none;padding:0;">
+          <div class="modal-main-area">
+            <div class="modal-header" style="display:none;">
+              <h2 id="modal-title" class="modal-title">Redact PDF Online Free</h2>
+              <button id="modal-close-btn" style="display:none;">&times;</button>
             </div>
+            <div class="file-drop-area" id="file-drop-area">
+              <input type="file" id="file-input" multiple>
+              <p>Drag &amp; drop your file(s) here or click to select.</p>
+              <button type="button" class="btn btn-secondary"
+                onclick="document.getElementById('file-input').click();">Select File(s)</button>
+              <p id="file-type-info" style="font-size:.9em;margin-top:10px;"></p>
+            </div>
+            <div id="file-list"></div>
+            <div id="tool-options"></div>
+            <div id="edit-canvas-container" style="display:none;">
+              <div id="page-controls">
+                <button id="prev-page" class="btn btn-secondary">Previous</button>
+                <span id="page-num-display">Page 1/1</span>
+                <button id="next-page" class="btn btn-secondary">Next</button>
+              </div>
+              <canvas id="pdf-edit-canvas"></canvas>
+              <div id="edit-toolbar" style="margin-top:10px;">
+                <button id="add-text-btn" class="btn btn-secondary">Add Text</button>
+                <button id="add-rect-btn" class="btn btn-secondary">Add Rectangle</button>
+                <button id="draw-mode-btn" class="btn btn-secondary">Draw</button>
+                <button id="clear-page-btn" class="btn btn-secondary">Clear Page Edits</button>
+              </div>
+            </div>
+            <div id="signature-canvas-container" style="display:none;">
+              <p>Draw your signature below:</p>
+              <canvas id="signature-canvas" width="400" height="200"></canvas>
+              <button id="clear-signature-btn" class="btn btn-secondary" style="margin-top:5px;">Clear Signature</button>
+            </div>
+            <button id="process-btn" class="btn" disabled>Process</button>
+            <div id="output-area"></div>
           </div>
         </div>
       </div>
-      <!-- ════════════════════════════════════════════════════════════ -->
+      <!-- ═════════════════════════════════════════════════════════════ -->
 
-      <!-- SEO CONTENT (pulled from app.js tool.content via JS below) -->
-      <div id="seo-content-area"></div>
+      <!-- SEO content injected by app.js tool.content -->
+      <div id="seo-content-area" style="margin-top:20px;"></div>
 
-      <!-- RELATED TOOLS -->
+      <!-- Related tools -->
       <div class="seo-card">
         <h2>Other Free PDF Tools</h2>
         <div class="rel-grid"><a href="/merge-pdf" class="rel-link">➕ Merge PDF</a><a href="/split-pdf" class="rel-link">✂️ Split PDF</a><a href="/compress-pdf" class="rel-link">💨 Compress PDF</a><a href="/pdf-to-word" class="rel-link">📄 PDF to Word</a><a href="/word-to-pdf" class="rel-link">📝 Word to PDF</a><a href="/pdf-to-jpg" class="rel-link">🖼️ PDF to JPG</a><a href="/jpg-to-pdf" class="rel-link">🖼️ JPG to PDF</a><a href="/pdf-to-png" class="rel-link">🖼️ PDF to PNG</a></div>
-        <p style="margin-top:12px;"><a href="/" style="color:#e53e3e;text-decoration:none;">← View all 36+ free PDF tools</a></p>
+        <p style="margin-top:12px;">
+          <a href="/" style="color:#e53e3e;text-decoration:none;">← View all 36+ free PDF tools</a>
+        </p>
       </div>
 
     </div>
   </main>
 
-  <!-- Hidden elements app.js needs that aren't on standalone pages -->
-  <div id="tools-grid" style="display:none"></div>
-  <div id="page-modal" style="display:none">
-    <div><h2 id="page-modal-title"></h2><div id="page-modal-body"></div><button id="page-modal-close-btn"></button></div>
+  <!-- Stub elements app.js needs but aren't on standalone pages -->
+  <div id="tools-grid" style="display:none;"></div>
+  <div id="page-modal" style="display:none;">
+    <div>
+      <h2 id="page-modal-title"></h2>
+      <div id="page-modal-body"></div>
+      <button id="page-modal-close-btn"></button>
+    </div>
   </div>
-  <div class="loader-overlay" id="loader-overlay" style="display:none;">
+  <div class="loader-overlay" id="loader-overlay">
     <div class="loader"></div>
     <p id="loader-text">Processing...</p>
   </div>
@@ -211,7 +198,13 @@
       <div class="footer-grid">
         <div class="footer-column">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
-            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28"><rect width="100" height="100" rx="20" fill="#e53e3e"/><rect x="28" y="20" width="44" height="55" rx="4" fill="white" opacity="0.95"/><rect x="34" y="32" width="32" height="4" rx="2" fill="#e53e3e"/><rect x="34" y="42" width="28" height="4" rx="2" fill="#e53e3e" opacity="0.7"/><rect x="34" y="52" width="24" height="4" rx="2" fill="#e53e3e" opacity="0.5"/></svg>
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+              <rect width="100" height="100" rx="20" fill="#e53e3e"/>
+              <rect x="28" y="20" width="44" height="55" rx="4" fill="white" opacity="0.95"/>
+              <rect x="34" y="32" width="32" height="4" rx="2" fill="#e53e3e"/>
+              <rect x="34" y="42" width="28" height="4" rx="2" fill="#e53e3e" opacity="0.7"/>
+              <rect x="34" y="52" width="24" height="4" rx="2" fill="#e53e3e" opacity="0.5"/>
+            </svg>
             <strong>PDF Genius Tools</strong>
           </div>
           <p>36+ free online PDF tools. All processing done client-side for maximum privacy.</p>
@@ -243,11 +236,10 @@
         </div>
       </div>
       <div class="footer-security-note">Your files are processed directly in your browser. No files are uploaded to any server.</div>
-      <div class="copyright">&copy; <span id="footer-year"></span> PDF Genius Tools. All Rights Reserved.</div>
+      <div class="copyright">&copy; <span id="footer-yr"></span> PDF Genius Tools. All Rights Reserved.</div>
     </div>
   </footer>
 
-  <!-- Libraries -->
   <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
   <script src="https://unpkg.com/pdfjs-dist@2.16.105/build/pdf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
@@ -260,115 +252,35 @@
   <script src="/js/app.js"></script>
 
   <script>
-    // ── Standalone page init ──────────────────────────────────────────
+    // Inject SEO content from app.js tool.content into the page
     (function() {
-      var SLUG = "redact-pdf";
-
-      document.addEventListener('DOMContentLoaded', function() {
-        // Year
-        var y1 = document.getElementById('current-year');
-        var y2 = document.getElementById('footer-year');
-        var yr = new Date().getFullYear();
-        if(y1) y1.textContent = yr;
-        if(y2) y2.textContent = yr;
-
-        // Wait for app.js to finish initialising pdfApp
-        function init() {
-          if (!window.pdfApp) { setTimeout(init, 80); return; }
-
-          var tool = window.pdfApp.toolImplementations[SLUG];
-          if (!tool) { setTimeout(init, 80); return; }
-
-          // ── 1. Set up the tool UI inline (no modal behaviour) ──
-          window.pdfApp.currentTool = tool;
-          window.pdfApp.currentTool.key = SLUG;
-          window.pdfApp.resetModal();
-          window.pdfApp.modalTitle.textContent = tool.title;
-
-          // File type
-          var fi = window.pdfApp.fileInput;
-          fi.accept = tool.fileType || '*/*';
-          window.pdfApp.fileTypeInfo.textContent = 'Accepted file type(s): ' + (tool.fileType || 'Any');
-
-          // Tool-specific options (sliders, selects etc.)
-          if (tool.options) {
-            tool.options(window.pdfApp.toolOptionsDiv, tool);
+      var slug = "redact-pdf";
+      function injectContent() {
+        if (!window.pdfApp) { setTimeout(injectContent, 100); return; }
+        var tool = window.pdfApp.toolImplementations[slug];
+        if (!tool) { setTimeout(injectContent, 100); return; }
+        if (tool.content) {
+          var area = document.getElementById('seo-content-area');
+          if (area) {
+            var card = document.createElement('div');
+            card.className = 'seo-card';
+            card.innerHTML = tool.content;
+            area.appendChild(card);
           }
-
-          // Show canvases for special tools
-          window.pdfApp.editCanvasContainer.style.display = SLUG === 'edit-pdf' ? 'block' : 'none';
-          window.pdfApp.signatureCanvasContainer.style.display = SLUG === 'sign-pdf' ? 'block' : 'none';
-
-          // html-to-pdf text mode
-          if (SLUG === 'html-to-pdf') {
-            var ht = document.getElementById('html-input-type');
-            if (ht && ht.value === 'text') window.pdfApp.fileDropArea.style.display = 'none';
-          }
-
-          // ── 2. Wire process button to the tool's process fn ──
-          var btn = window.pdfApp.processBtn;
-          btn.disabled = false;
-          btn.onclick = async function() {
-            if (!window.pdfApp.selectedFiles || window.pdfApp.selectedFiles.length === 0) {
-              // For text-based tools (html-to-pdf), allow empty files
-              if (SLUG !== 'html-to-pdf') {
-                alert('Please select a file first.');
-                return;
-              }
-            }
-            try {
-              await tool.process(window.pdfApp.selectedFiles || []);
-            } catch(e) {
-              window.pdfApp.hideLoader();
-              console.error(e);
-              window.pdfApp.outputArea.innerHTML = '<p style="color:#e53e3e;">Error: ' + e.message + '</p>';
-            }
-          };
-
-          // ── 3. Pull SEO content into the page ──
-          if (tool.content) {
-            var area = document.getElementById('seo-content-area');
-            if (area) {
-              var card = document.createElement('div');
-              card.className = 'seo-card';
-              card.innerHTML = tool.content;
-              area.appendChild(card);
-            }
-          }
-
-          // ── 4. Make loader work inline (not fullscreen) ──
-          var loader = document.getElementById('loader-overlay');
-          if (loader) {
-            loader.style.position = 'fixed';
-            loader.style.display = 'none';
-          }
-          window.pdfApp.showLoader = function(msg) {
-            loader.style.display = 'flex';
-            var lt = document.getElementById('loader-text');
-            if (lt) lt.textContent = msg || 'Processing...';
-          };
-          window.pdfApp.hideLoader = function() {
-            loader.style.display = 'none';
-          };
-
-          // ── 5. File selection wiring (already handled by app.js listeners
-          //       but re-enable processBtn on file change) ──
-          fi.addEventListener('change', function() {
-            btn.disabled = (fi.files.length === 0 && SLUG !== 'html-to-pdf');
-          });
-
         }
-        init();
-      });
+        // Footer year
+        var fy = document.getElementById('footer-yr');
+        if (fy) fy.textContent = new Date().getFullYear();
+      }
+      document.addEventListener('DOMContentLoaded', injectContent);
     })();
   </script>
 
-  <!-- Back to top -->
-  <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"
+  <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"
     style="position:fixed;bottom:24px;right:24px;width:46px;height:46px;border-radius:50%;background:#e53e3e;color:#fff;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);z-index:200;">↑</button>
   <script>
-    var btt = document.getElementById('btt');
-    window.addEventListener('scroll', function() { btt.style.display = window.scrollY > 300 ? 'flex' : 'none'; });
+    var btt=document.getElementById('btt');
+    window.addEventListener('scroll',function(){btt.style.display=window.scrollY>300?'flex':'none';});
   </script>
 </body>
 </html>
