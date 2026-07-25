@@ -3949,8 +3949,8 @@
               	// REMOVE old SEO content if switching tools
 				this.toolContentDiv?.remove();
                 
-              	// ADD SEO content
-                if (tool.content) {
+              	// ADD SEO content (skip on standalone pages — shown separately below tool)
+                if (tool.content && !document.body.classList.contains('standalone-tool-page')) {
                     this.toolContentDiv = document.createElement('div');
                     this.toolContentDiv.className = 'tool-seo-content-wrapper';
                     this.toolContentDiv.innerHTML = tool.content;

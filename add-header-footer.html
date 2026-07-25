@@ -5,10 +5,10 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Add Header and Footer to PDF Online Free | PDF Genius Tools</title>
-  <meta name="description" content="Add custom header and footer to all PDF pages online free. Insert text in header or footer of every page.">
+  <meta name="description" content="Add custom header and footer to all PDF pages online free.">
   <link rel="canonical" href="https://www.pdfgeniustools.online/add-header-footer">
   <meta property="og:title" content="Add Header and Footer to PDF Online Free | PDF Genius Tools">
-  <meta property="og:description" content="Add custom header and footer to all PDF pages online free. Insert text in header or footer of every page.">
+  <meta property="og:description" content="Add custom header and footer to all PDF pages online free.">
   <meta property="og:url" content="https://www.pdfgeniustools.online/add-header-footer">
   <meta property="og:site_name" content="PDF Genius Tools">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -19,44 +19,104 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Add Header and Footer to PDF Online Free","url":"https://www.pdfgeniustools.online/add-header-footer","applicationCategory":"UtilitiesApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.pdfgeniustools.online/"},{"@type":"ListItem","position":2,"name":"Add Header and Footer to PDF Online Free","item":"https://www.pdfgeniustools.online/add-header-footer"}]}</script>
   <link rel="stylesheet" href="/css/style.css">
+
   <style>
-    /* ── Inline tool styles (no modal overlay) ── */
-    .tool-inline-wrap {
-      max-width: 860px;
-      margin: 0 auto;
-      background: var(--card-bg, #1e1e2e);
-      border-radius: 12px;
-      padding: 24px;
-      box-shadow: 0 2px 16px rgba(0,0,0,.2);
+    /* ── Force dark theme on standalone pages ── */
+    body.standalone-tool-page {
+      background-color: #0f0f1a !important;
+      color: #e2e8f0 !important;
     }
     /* Hero */
-    .sp-hero{background:var(--hero-bg,linear-gradient(135deg,#1a1a2e 0%,#16213e 100%));padding:32px 0 20px;text-align:center;}
-    .sp-hero h1{font-size:clamp(1.4rem,4vw,2rem);margin:0 0 .4rem;color:var(--text-primary,#fff);}
-    .sp-hero p.sub{color:var(--text-secondary,#aaa);max-width:600px;margin:0 auto 10px;font-size:.97rem;}
-    .sp-badges{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:10px;}
-    .sp-badge{background:rgba(229,62,62,.12);border:1px solid rgba(229,62,62,.3);border-radius:20px;padding:4px 12px;font-size:.8rem;color:#e53e3e;}
+    .sp-hero {
+      background: linear-gradient(135deg,#0f0f1a 0%,#1a1a2e 50%,#16213e 100%);
+      padding: 48px 16px 32px;
+      text-align: center;
+      border-bottom: 1px solid rgba(229,62,62,.2);
+    }
+    .sp-hero h1 { font-size:clamp(1.6rem,4vw,2.2rem);font-weight:800;color:#fff;margin:0 0 10px;letter-spacing:-.02em; }
+    .sp-hero .sub { color:#94a3b8;font-size:1rem;max-width:560px;margin:0 auto 16px;line-height:1.6; }
+    .sp-badges { display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:14px; }
+    .sp-badge { background:rgba(229,62,62,.12);border:1px solid rgba(229,62,62,.35);border-radius:20px;padding:5px 16px;font-size:.8rem;color:#fc8181;font-weight:500; }
+    /* Breadcrumb */
+    .sp-breadcrumb { max-width:900px;margin:14px auto 0;padding:0 16px;font-size:.83rem;color:#475569; }
+    .sp-breadcrumb a { color:#e53e3e;text-decoration:none; }
     /* Page wrap */
-    .sp-wrap{max-width:900px;margin:0 auto;padding:20px 16px 32px;}
-    /* SEO content */
-    .seo-card{background:var(--card-bg,#1e1e2e);border-radius:12px;padding:24px;margin-bottom:18px;box-shadow:0 2px 12px rgba(0,0,0,.15);}
-    .seo-card h2{font-size:1.12rem;margin:0 0 10px;color:var(--text-primary,#fff);}
-    .seo-card p,.seo-card li{color:var(--text-secondary,#bbb);line-height:1.75;margin:0 0 8px;}
-    .seo-card strong{color:var(--text-primary,#fff);}
-    .seo-card a{color:#e53e3e;}
-    /* tool-content injected by app.js */
-    .tool-seo-content-wrapper{margin-top:8px;}
-    .tool-content h1{font-size:1.2rem;margin:0 0 8px;color:var(--text-primary,#fff);}
-    .tool-content h2{font-size:1rem;margin:14px 0 5px;color:var(--text-primary,#fff);}
-    .tool-content p{color:var(--text-secondary,#bbb);line-height:1.7;margin:0 0 8px;}
-    .tool-content br{display:none;}
-    /* Related */
-    .rel-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
-    .rel-link{display:inline-block;background:var(--card-bg,#1e1e2e);border:1px solid var(--border,#333);border-radius:8px;padding:6px 12px;color:var(--text-primary,#fff);text-decoration:none;font-size:.85rem;transition:background .15s,color .15s;}
-    .rel-link:hover{background:#e53e3e;color:#fff;border-color:#e53e3e;}
+    .sp-wrap { max-width:900px;margin:0 auto;padding:24px 16px 48px; }
+    /* Tool box */
+    .tool-inline-wrap {
+      background:#1a1a2e !important;
+      border:1px solid rgba(229,62,62,.2) !important;
+      border-radius:16px !important;
+      padding:28px !important;
+      margin-bottom:24px !important;
+      box-shadow:0 4px 24px rgba(0,0,0,.4) !important;
+    }
+    body.standalone-tool-page .modal-content { background:transparent!important;box-shadow:none!important; }
+    body.standalone-tool-page .file-drop-area {
+      background:#0f0f1a!important;border-color:rgba(229,62,62,.35)!important;
+      border-radius:12px!important;padding:36px!important;
+    }
+    body.standalone-tool-page .file-drop-area p { color:#94a3b8!important; }
+    body.standalone-tool-page #file-type-info { color:#64748b!important; }
+    body.standalone-tool-page #tool-options label { color:#cbd5e1!important;display:block;margin-bottom:6px;font-weight:500; }
+    body.standalone-tool-page #tool-options input[type=range] { accent-color:#e53e3e;width:100%; }
+    body.standalone-tool-page #tool-options input[type=text],
+    body.standalone-tool-page #tool-options input[type=number],
+    body.standalone-tool-page #tool-options select,
+    body.standalone-tool-page #tool-options textarea {
+      background:#0f0f1a!important;border:1px solid #334155!important;
+      color:#e2e8f0!important;border-radius:8px!important;padding:8px 12px!important;width:100%;
+    }
+    body.standalone-tool-page .btn:disabled { background:#334155!important;color:#64748b!important; }
+    body.standalone-tool-page #file-list { color:#94a3b8; }
+    body.standalone-tool-page #output-area { color:#94a3b8; }
+    body.standalone-tool-page #output-area a.btn { margin-top:12px; }
+    /* hr separator inside tool */
+    body.standalone-tool-page .modal-main-area hr { border-color:rgba(255,255,255,.08)!important; }
+    /* SEO card */
+    .seo-card {
+      background:#1a1a2e!important;
+      border:1px solid rgba(255,255,255,.06)!important;
+      border-radius:16px!important;
+      padding:28px!important;
+      margin-bottom:20px!important;
+      box-shadow:0 4px 20px rgba(0,0,0,.3)!important;
+    }
+    .seo-card h2 {
+      font-size:1.15rem!important;font-weight:700!important;color:#fff!important;
+      margin:0 0 14px!important;padding-bottom:10px;
+      border-bottom:1px solid rgba(229,62,62,.2);
+    }
+    .seo-card h3,.seo-card .tool-content h2 { font-size:1rem!important;color:#e2e8f0!important;margin:14px 0 5px!important; }
+    .seo-card p,.seo-card li,.seo-card .tool-content p { color:#94a3b8!important;line-height:1.8!important;margin:0 0 8px!important;font-size:.95rem; }
+    .seo-card strong,.seo-card .tool-content strong { color:#cbd5e1!important; }
+    .seo-card a { color:#fc8181!important; }
+    .seo-card .tool-content br { display:none; }
+    /* Related tools */
+    .rel-grid { display:flex;flex-wrap:wrap;gap:9px;margin-top:12px; }
+    .rel-link {
+      display:inline-flex;align-items:center;gap:5px;
+      background:#0f0f1a!important;border:1px solid #1e293b!important;
+      border-radius:8px!important;padding:8px 14px!important;
+      color:#94a3b8!important;text-decoration:none;font-size:.85rem!important;
+      transition:all .18s ease!important;
+    }
+    .rel-link:hover { background:#e53e3e!important;color:#fff!important;border-color:#e53e3e!important;transform:translateY(-1px); }
+    /* Footer */
+    body.standalone-tool-page .site-footer { background:#0a0a14!important;border-top:1px solid rgba(229,62,62,.15)!important; }
+    /* Scrollbar */
+    body.standalone-tool-page ::-webkit-scrollbar { width:8px; }
+    body.standalone-tool-page ::-webkit-scrollbar-track { background:#0f0f1a; }
+    body.standalone-tool-page ::-webkit-scrollbar-thumb { background:#334155;border-radius:4px; }
+    body.standalone-tool-page ::-webkit-scrollbar-thumb:hover { background:#e53e3e; }
+    @media(max-width:640px){
+      .sp-hero{padding:32px 16px 24px;}
+      .tool-inline-wrap{padding:18px!important;}
+      .seo-card{padding:18px!important;}
+    }
   </style>
 </head>
-<body class="standalone-tool-page">
-  <!-- current-year used by app.js -->
+<body class="standalone-tool-page dark-mode">
   <span id="current-year" style="display:none"></span>
 
   <header class="site-header" id="site-header">
@@ -96,13 +156,13 @@
   </nav>
 
   <main>
-    <nav aria-label="breadcrumb" style="max-width:900px;margin:10px auto 0;padding:0 16px;font-size:.84rem;color:var(--text-secondary,#aaa);">
-      <a href="/" style="color:#e53e3e;text-decoration:none;">Home</a> &rsaquo; <span>Add Header and Footer to PDF Online Free</span>
+    <nav class="sp-breadcrumb" aria-label="breadcrumb">
+      <a href="/">Home</a> &rsaquo; <span style="color:#94a3b8;">Add Header and Footer to PDF Online Free</span>
     </nav>
 
     <section class="sp-hero">
       <div class="container">
-        <div style="font-size:2rem;margin-bottom:8px;">📝</div>
+        <div style="font-size:2.4rem;margin-bottom:10px;">📝</div>
         <h1>Add Header and Footer to PDF Online Free</h1>
         <p class="sub">Insert custom text in the header and footer of every PDF page.</p>
         <div class="sp-badges">
@@ -116,12 +176,7 @@
 
     <div class="sp-wrap">
 
-      <!-- ═══ INLINE TOOL UI ═══════════════════════════════════════════
-           All the standard modal DOM elements are here but rendered
-           inline. app.js finds them by ID as normal, but because
-           <body> has class "standalone-tool-page", openModal() skips
-           the overlay show and body scroll-lock (patched in app.js).
-      ══════════════════════════════════════════════════════════════════ -->
+      <!-- INLINE TOOL (modal shown as inline block via standalone-tool-page class) -->
       <div class="tool-inline-wrap" id="tool-modal">
         <div class="modal-content" style="position:static;width:100%;max-height:none;border-radius:0;box-shadow:none;padding:0;">
           <div class="modal-main-area">
@@ -162,31 +217,26 @@
           </div>
         </div>
       </div>
-      <!-- ═════════════════════════════════════════════════════════════ -->
 
-      <!-- SEO content injected by app.js tool.content -->
-      <div id="seo-content-area" style="margin-top:20px;"></div>
+      <!-- SEO content injected here by JS (no duplication — app.js skips injection on standalone) -->
+      <div id="seo-content-area" style="margin-top:4px;"></div>
 
       <!-- Related tools -->
       <div class="seo-card">
-        <h2>Other Free PDF Tools</h2>
+        <h2>🔧 Other Free PDF Tools</h2>
         <div class="rel-grid"><a href="/merge-pdf" class="rel-link">➕ Merge PDF</a><a href="/split-pdf" class="rel-link">✂️ Split PDF</a><a href="/compress-pdf" class="rel-link">💨 Compress PDF</a><a href="/pdf-to-word" class="rel-link">📄 PDF to Word</a><a href="/word-to-pdf" class="rel-link">📝 Word to PDF</a><a href="/pdf-to-jpg" class="rel-link">🖼️ PDF to JPG</a><a href="/jpg-to-pdf" class="rel-link">🖼️ JPG to PDF</a><a href="/pdf-to-png" class="rel-link">🖼️ PDF to PNG</a></div>
-        <p style="margin-top:12px;">
-          <a href="/" style="color:#e53e3e;text-decoration:none;">← View all 36+ free PDF tools</a>
+        <p style="margin-top:14px;">
+          <a href="/" style="color:#fc8181;text-decoration:none;font-size:.9rem;">← View all 36+ free PDF tools</a>
         </p>
       </div>
 
     </div>
   </main>
 
-  <!-- Stub elements app.js needs but aren't on standalone pages -->
+  <!-- Stub elements app.js needs -->
   <div id="tools-grid" style="display:none;"></div>
   <div id="page-modal" style="display:none;">
-    <div>
-      <h2 id="page-modal-title"></h2>
-      <div id="page-modal-body"></div>
-      <button id="page-modal-close-btn"></button>
-    </div>
+    <div><h2 id="page-modal-title"></h2><div id="page-modal-body"></div><button id="page-modal-close-btn"></button></div>
   </div>
   <div class="loader-overlay" id="loader-overlay">
     <div class="loader"></div>
@@ -205,9 +255,9 @@
               <rect x="34" y="42" width="28" height="4" rx="2" fill="#e53e3e" opacity="0.7"/>
               <rect x="34" y="52" width="24" height="4" rx="2" fill="#e53e3e" opacity="0.5"/>
             </svg>
-            <strong>PDF Genius Tools</strong>
+            <strong style="color:#fff;">PDF Genius Tools</strong>
           </div>
-          <p>36+ free online PDF tools. All processing done client-side for maximum privacy.</p>
+          <p style="color:#64748b;font-size:.9rem;">36+ free online PDF tools. All processing done client-side for maximum privacy.</p>
         </div>
         <div class="footer-column">
           <h4>Popular Tools</h4>
@@ -232,7 +282,7 @@
         </div>
         <div class="footer-column">
           <h4>Contact</h4>
-          <p>Email: <a href="mailto:support@pdfgeniustools.online">support@pdfgeniustools.online</a></p>
+          <p style="color:#64748b;font-size:.9rem;">Email: <a href="mailto:support@pdfgeniustools.online" style="color:#fc8181;">support@pdfgeniustools.online</a></p>
         </div>
       </div>
       <div class="footer-security-note">Your files are processed directly in your browser. No files are uploaded to any server.</div>
@@ -252,32 +302,31 @@
   <script src="/js/app.js"></script>
 
   <script>
-    // Inject SEO content from app.js tool.content into the page
     (function() {
       var slug = "add-header-footer";
-      function injectContent() {
-        if (!window.pdfApp) { setTimeout(injectContent, 100); return; }
+      function injectSEO() {
+        if (!window.pdfApp) { setTimeout(injectSEO, 100); return; }
         var tool = window.pdfApp.toolImplementations[slug];
-        if (!tool) { setTimeout(injectContent, 100); return; }
+        if (!tool) { setTimeout(injectSEO, 100); return; }
+        // Inject SEO content ONCE below tool widget
         if (tool.content) {
           var area = document.getElementById('seo-content-area');
-          if (area) {
+          if (area && area.children.length === 0) {
             var card = document.createElement('div');
             card.className = 'seo-card';
             card.innerHTML = tool.content;
             area.appendChild(card);
           }
         }
-        // Footer year
         var fy = document.getElementById('footer-yr');
         if (fy) fy.textContent = new Date().getFullYear();
       }
-      document.addEventListener('DOMContentLoaded', injectContent);
+      document.addEventListener('DOMContentLoaded', injectSEO);
     })();
   </script>
 
   <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"
-    style="position:fixed;bottom:24px;right:24px;width:46px;height:46px;border-radius:50%;background:#e53e3e;color:#fff;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);z-index:200;">↑</button>
+    style="position:fixed;bottom:24px;right:24px;width:46px;height:46px;border-radius:50%;background:#e53e3e;color:#fff;border:none;cursor:pointer;font-size:20px;display:none;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(229,62,62,.4);z-index:200;">↑</button>
   <script>
     var btt=document.getElementById('btt');
     window.addEventListener('scroll',function(){btt.style.display=window.scrollY>300?'flex':'none';});
