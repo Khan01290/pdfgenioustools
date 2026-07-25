@@ -3846,8 +3846,7 @@
                         const toolKey = link.dataset.tool;
                         const tool = this.toolImplementations[toolKey];
                         if (tool) {
-                            this.openModal(toolKey, tool);
-                            this.modal.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            window.location.href = '/' + toolKey;
                         }
                     });
                 });
@@ -3912,7 +3911,7 @@
                     `;
 
                     if (!tool.isPlaceholder) {
-                        card.addEventListener('click', () => this.openModal(key, tool));
+                        card.addEventListener('click', () => { window.location.href = '/' + key; });
                     } else {
                         card.style.cursor = 'not-allowed';
                         card.style.opacity = '0.7';
@@ -4911,7 +4910,7 @@
                             const toolKey = item.dataset.toolKey;
                             const tool = this.toolImplementations[toolKey];
                             if (tool && !tool.isPlaceholder) {
-                                this.openModal(toolKey, tool);
+                                window.location.href = '/' + toolKey;
                                 resultsDropdown.style.display = 'none';
                                 document.getElementById('tool-search-input').value = '';
                                 document.getElementById('clear-search-btn').style.display = 'none';
