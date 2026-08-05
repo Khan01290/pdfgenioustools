@@ -1,3 +1,7 @@
+# Force www -> non-www (canonical host), so this doesn't depend solely on
+# the Netlify dashboard's "primary domain" setting
+https://www.pdfgeniustools.online/*  https://pdfgeniustools.online/:splat  301!
+
 # Tool pages — each URL serves its own standalone HTML file
 /merge-pdf               /merge-pdf.html              200
 /split-pdf               /split-pdf.html              200

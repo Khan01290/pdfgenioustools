@@ -3704,7 +3704,7 @@
                     var ogDesc = document.querySelector('meta[property="og:description"]');
                     if (ogDesc) ogDesc.setAttribute('content', toolSeoMap[path].desc);
                     var canonical = document.querySelector('link[rel="canonical"]');
-                    if (canonical) canonical.setAttribute('href', 'https://www.pdfgeniustools.online/' + path);
+                    if (canonical) canonical.setAttribute('href', 'https://pdfgeniustools.online/' + path);
                 }
 
                 // Find matching tool key case-insensitively

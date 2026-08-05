@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /cdn-cgi/
 
-Sitemap: https://www.pdfgeniustools.online/sitemap.xml
+Sitemap: https://pdfgeniustools.online/sitemap.xml
